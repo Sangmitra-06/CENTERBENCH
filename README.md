@@ -127,7 +127,7 @@ Scripts for evaluating model performance:
 
 ## 🖥️ Usage
 
-### Downloading the Dataset
+### 1. Clone the Repository
 
 Clone this repository to access the complete CenterBench dataset:
 ```bash
@@ -135,7 +135,36 @@ git clone https://github.com/Sangmitra-06/CENTERBENCH.git
 cd CENTERBENCH
 ```
 
-### Loading the Dataset
+### 2. Install Dependencies
+
+Install the required dependencies:
+```bash
+pip install -r requirements.txt
+python -m spacy download en_core_web_sm
+```
+
+**Note for Gemini users:** You'll also need to install the Google Cloud CLI and authenticate:
+```bash
+# Install gcloud CLI (see https://cloud.google.com/sdk/docs/install)
+gcloud auth login
+```
+
+### 3. Set Up API Keys
+
+Create a `.env` file in the root directory with your API keys:
+```env
+TOGETHER_API_KEY=your_together_api_key
+ANTHROPIC_API_KEY=your_anthropic_api_key
+DEEPSEEK_API_KEY=your_deepseek_api_key
+GEMINI_API_KEY=your_gemini_api_key
+```
+
+**For Gemini Vertex AI users:** Update the project parameters in `Experiments/Evaluation/generate_response_and_evaluate.py` (line 952):
+```python
+client = genai.Client(vertexai=True, project="your_project_name", location="your_project_location")
+```
+
+### 4. Load the Dataset
 ```python
 import json
 
@@ -151,38 +180,7 @@ with open('Dataset/implausible_subset.json', 'r') as f:
 complexity_1_sentences = plausible_data['complexity_1']['sentences']
 ```
 
-### Evaluating Your Model
-
-#### Installation
-
-Install the required dependencies:
-```bash
-pip install -r requirements.txt
-python -m spacy download en_core_web_sm
-```
-
-**Note for Gemini users:** You'll also need to install the Google Cloud CLI and authenticate:
-```bash
-# Install gcloud CLI (see https://cloud.google.com/sdk/docs/install)
-gcloud auth login
-```
-
-#### Set Up API Keys
-
-Create a `.env` file in the root directory with your API keys:
-```bash
-TOGETHER_API_KEY=your_together_api_key
-ANTHROPIC_API_KEY=your_anthropic_api_key
-DEEPSEEK_API_KEY=your_deepseek_api_key
-GEMINI_API_KEY=your_gemini_api_key
-```
-
-For Gemini Vertex AI, update the project parameters in the evaluation script (line 952):
-```python
-client = genai.Client(vertexai=True, project="your_project_name", location="your_project_location")
-```
-
-#### Run Evaluation
+### 5. Run Evaluation
 
 Use our evaluation script to test models on the dataset:
 ```bash
@@ -200,7 +198,7 @@ python Experiments/Evaluation/generate_response_and_evaluate.py Dataset/plausibl
     --output results.json
 ```
 
-#### Supported Models
+### Supported Models
 
 The evaluation script supports models from:
 - **Together AI**: Various open-source models
