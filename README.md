@@ -119,7 +119,7 @@ Scripts and resources for generating the CenterBench dataset:
 - **`question_and_answer_generation_plausible.py`**: Generates question-answer pairs for plausible sentences
 - **`question_and_answer_generation_implausible.py`**: Generates question-answer pairs for implausible sentences
 
-### Evaluation (`experiments/Evaluation/`)
+### Evaluation (`Experiments/Evaluation/`)
 
 Scripts for evaluating model performance:
 
