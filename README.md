@@ -131,8 +131,8 @@ Scripts for evaluating model performance:
 
 Clone this repository to access the complete CenterBench dataset:
 ```bash
-git clone https://github.com/yourusername/centerbench.git
-cd centerbench
+git clone https://github.com/Sangmitra-06/CENTERBENCH.git
+cd CENTERBENCH
 ```
 
 ### Loading the Dataset
