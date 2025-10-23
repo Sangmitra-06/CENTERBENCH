@@ -1,15 +1,15 @@
-# CENTERBENCH
+# 🧩CENTERBENCH
 
 This is the repository for [The Dog the Cat Chased Stumped the Model:
 Measuring When Language Models Abandon Structure for Shortcuts](https://arxiv.org/abs/2502.05331). 
 
 Authors: Sangmitra Madhusudan, Kaige Chen, and Ali Emami
 
-## Paper abstract
+## 📄 Paper abstract
 
 When language models correctly parse "The cat that the dog chased meowed," are they analyzing syntax or simply familiar with dogs chasing cats? Despite extensive benchmarking, we lack methods to distinguish structural understanding from semantic pattern matching. We introduce **CENTERBENCH**, a dataset of 9,720 comprehension questions on center-embedded sentences (like "The cat [that the dog chased] meowed") where relative clauses nest recursively, creating processing demands from simple to deeply nested structures. Each sentence has a syntactically identical but semantically implausible counterpart (e.g., mailmen prescribe medicine, doctors deliver mail) and six comprehension questions testing surface understanding, syntactic dependencies, and causal reasoning. Testing six models reveals that performance gaps between plausible and implausible sentences widen systematically with complexity, with models showing median gaps up to 26.8 percentage points, quantifying when they abandon structural analysis for semantic associations. Notably, semantic plausibility harms performance on questions about resulting actions, where following causal relationships matters more than semantic coherence. Reasoning models improve accuracy but their traces show semantic shortcuts, overthinking, and answer refusal. Unlike models whose plausibility advantage systematically widens with complexity, humans shows variable semantic effects. CenterBench provides the first framework to identify when models shift from structural analysis to pattern matching.
 
-## Repository Structure
+## 📁 Repository Structure
 ```
 .
 ├── Dataset/
@@ -26,7 +26,7 @@ When language models correctly parse "The cat that the dog chased meowed," are t
         └── generate_response_and_evaluate.py
 ```
 
-## Dataset
+## 🗃️ Dataset
 
 The `Dataset/` folder contains the CenterBench dataset files:
 
@@ -105,7 +105,7 @@ Each JSON file is organized by complexity level (`complexity_1` to `complexity_6
 }
 ```
 
-## Experiments
+## 🔧 Experiments
 
 The `Experiments/` folder contains scripts for dataset generation and model evaluation.
 
@@ -125,7 +125,7 @@ Scripts for evaluating model performance:
 
 - **`generate_response_and_evaluate.py`**: Main script for generating model responses and evaluating them against dataset answers
 
-## Usage
+## 🖥️ Usage
 
 ### Generating the Dataset
 ```bash
@@ -147,6 +147,6 @@ python experiments/Dataset_Creation/question_and_answer_generation_implausible.p
 python experiments/Evaluation/generate_response_and_evaluate.py
 ```
 
-## Reference
+## ✏️ Reference
 
 Please use the following bibtex citation if this paper was a part of your work, thank you!
