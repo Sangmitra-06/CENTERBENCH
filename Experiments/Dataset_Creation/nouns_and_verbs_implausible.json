@@ -1,0 +1,500 @@
+{
+  "animals": {
+    "birds": {
+    "parrot": {
+      "transitive": [
+        "mimicked"
+      ],
+      "intransitive": [
+        "chattered"
+      ]
+    },
+    "duck": {
+      "transitive": [
+        "paddled toward"
+      ],
+      "intransitive": [
+        "dabbled peacefully"
+      ]
+    },
+    "vulture": {
+      "transitive": [
+        "scavenged from"
+      ],
+      "intransitive": [
+        "scavenged"
+      ]
+    },
+    "pelican": {
+      "transitive": [
+        "scooped at"
+      ],
+      "intransitive": [
+        "pouched fish"
+      ]
+    },
+    "seagull": {
+      "transitive": [
+        "dive-bombed"
+      ],
+      "intransitive": [
+        "wheeled above the harbor"
+      ]
+    },
+    "heron": {
+      "transitive": [
+        "speared"
+      ],
+      "intransitive": [
+        "waded"
+      ]
+    },
+    "bat": {
+      "transitive": [
+        "echolocated"
+      ],
+      "intransitive": [
+        "hung from a branch"
+      ]
+    }
+  },
+    "mammals": {
+      "dog": {
+        "transitive": [
+          "barked at"
+        ],
+        "intransitive": [
+          "barked",
+          "wagged his tail"
+        ]
+      },
+      "cat": {
+        "transitive": [
+          "meowed at",
+          "purred at"
+        ],
+        "intransitive": [
+          "meowed",
+          "purred"
+        ]
+      },
+      "horse": {
+        "transitive": [
+          "neighed at",
+          "whinnied at",
+          "galloped toward"
+        ],
+        "intransitive": [
+          "neighed",
+          "whinnied",
+          "galloped"
+        ]
+      },
+      "lion": {
+        "transitive": [
+          "roared at",
+          "prowled toward"
+        ],
+        "intransitive": [
+          "roared",
+          "prowled"
+        ]
+      },
+      "cow": {
+        "transitive": [
+          "mooed at",
+          "lowed at"
+        ],
+        "intransitive": [
+          "mooed",
+          "lowed",
+          "grazed"
+        ]
+      },
+      "bear": {
+        "transitive": [
+          "growled at",
+          "swiped at",
+          "lumbered toward"
+        ],
+        "intransitive": [
+          "lumbered",
+          "hibernated"
+        ]
+      },
+      "elephant": {
+        "transitive": [
+          "trumpeted at",
+          "charged at"
+        ],
+        "intransitive": [
+          "trumpeted",
+          "stomped"
+        ]
+      },
+      "deer": {
+        "transitive": [
+          "bounded toward",
+          "leaped at"
+        ],
+        "intransitive": [
+          "bounded",
+          "leaped"
+        ]
+      },
+      "pig": {
+        "transitive": [
+          "oinked at",
+          "snorted at",
+          "rooted at"
+        ],
+        "intransitive": [
+          "oinked",
+          "snorted",
+          "rooted into the ground"
+        ]
+      },
+      "giraffe": {
+        "transitive": [
+          "stretched toward"
+        ],
+        "intransitive": [
+          "craned at the treetop"
+        ]
+      },
+      "mouse": {
+        "transitive": [
+          "squeaked at",
+          "scurried toward"
+        ],
+        "intransitive": [
+          "squeaked",
+          "scurried"
+        ]
+      },
+      "sheep": {
+        "transitive": [
+          "bleated at",
+          "baaed at"
+        ],
+        "intransitive": [
+          "bleated",
+          "baaed"
+        ]
+      },
+      "donkey": {
+        "transitive": [
+          "brayed at",
+          "kicked"
+        ],
+        "intransitive": [
+          "brayed"
+        ]
+      },
+      "rabbit": {
+        "transitive": [
+          "thumped at",
+          "hopped toward"
+        ],
+        "intransitive": [
+          "thumped",
+          "hopped"
+        ]
+      },
+      "squirrel": {
+        "transitive": [
+          "chittered at"
+        ],
+        "intransitive": [
+          "scampered up the tree"
+        ]
+      },
+      "coyote": {
+        "transitive": [
+          "yipped at",
+          "howled at"
+        ],
+        "intransitive": [
+          "yipped",
+          "howled"
+        ]
+      },
+      "moose": {
+        "transitive": [
+          "bellowed at",
+          "charged at"
+        ],
+        "intransitive": [
+          "bellowed"
+        ]
+      },
+      "beaver": {
+        "transitive": [
+          "gnawed at"
+        ],
+        "intransitive": [
+          "slapped"
+        ]
+      },
+      "camel": {
+        "transitive": [
+          "spat at"
+        ],
+        "intransitive": [
+          "humped"
+        ]
+      },
+      "skunk": {
+        "transitive": [
+          "sprayed at"
+        ],
+        "intransitive": [
+          "waddled"
+        ]
+      },
+      "crab": {
+        "transitive": [
+          "scuttled toward"
+        ],
+        "intransitive": [
+          "scuttled"
+        ]
+      },
+       "dolphin": {
+        "transitive": [
+          "clicked at",
+          "squeaked at"
+        ],
+        "intransitive": [
+          "clicked",
+          "squeaked"
+        ]
+      },
+      "whale": {
+        "transitive": [
+          "sang at",
+          "spouted at"
+        ],
+        "intransitive": [
+          "sang",
+          "spouted"
+        ]
+      }
+    },
+    "reptiles_amphibians": {
+      "frog": {
+        "transitive": [
+          "croaked at",
+          "hopped toward"
+        ],
+        "intransitive": [
+          "croaked",
+          "hopped"
+        ]
+      },
+      "lizard": {
+        "transitive": [
+          "basked toward"
+        ],
+        "intransitive": [
+          "darted"
+        ]
+      },
+      "cobra": {
+        "transitive": [
+          "hissed at",
+          "reared at"
+        ],
+        "intransitive": [
+          "hissed",
+          "reared",
+          "coiled" ]
+      }},
+    "insects": {
+      "bee": {
+        "transitive": [
+          "buzzed at",
+          "stung"
+        ],
+        "intransitive": [
+          "buzzed",
+          "swarmed"
+        ]
+      },
+      "spider": {
+        "transitive": [
+          "crawled toward"
+        ],
+        "intransitive": [
+          "spun a web",
+          "crawled"
+        ]
+      },
+      "cockroach": {
+        "transitive": [
+          "scuttled toward",
+          "crawled toward"
+        ],
+        "intransitive": [
+          "scuttled",
+          "crawled"
+        ]
+      },
+      "butterfly": {
+        "transitive": [
+          "fluttered toward"
+        ],
+        "intransitive": [
+          "fluttered"
+        ]
+      },
+      "grasshopper": {
+        "transitive": [
+          "hopped toward",
+          "chirped at"
+        ],
+        "intransitive": [
+          "hopped",
+          "chirped"
+        ]
+      },
+      "worm": {
+        "transitive": [
+          "wriggled toward"
+        ],
+        "intransitive": [
+          "wriggled",
+          "burrowed"
+        ]
+      }
+    },
+    "aquatic": {
+      "tuna": {
+        "transitive": [
+          "swam toward",
+          "schooled with"
+        ],
+        "intransitive": [
+          "swam",
+          "jumped"
+        ]
+      },
+      "shark": {
+        "transitive": [
+          "circled around",
+          "attacked"
+        ],
+        "intransitive": [
+          "circled",
+          "attacked"
+        ]
+      },
+      "starfish": {
+        "transitive": [
+          "clung to",
+          "crawled toward"
+        ],
+        "intransitive": [
+          "clung",
+          "crawled"
+        ]
+      },
+      "octopus": {
+        "transitive": [
+          "squeezed",
+          "inked at"
+        ],
+        "intransitive": [
+          "squeezed",
+          "inked"
+        ]
+      }
+    }
+  },
+  "people": {
+    "professions": {
+      "doctor": {
+        "transitive": ["prescribed medicine to", "diagnosed", "examined with a stethoscope"],
+        "intransitive": ["prescribed medicines", "diagnosed"]
+      },
+      "lawyer": {
+        "transitive": ["cross-examined", "defended in court", "subpoenaed"],
+        "intransitive": ["argued", "objected to the statement"]
+      },
+      "teacher": {
+        "transitive": ["graded", "lectured to", "assigned homework to"],
+        "intransitive": ["lectured", "taught"]
+      },
+      "nurse": {
+        "transitive": ["bandaged", "administered shots to", "took the temperature of"],
+        "intransitive": ["triaged", "nursed"]
+      },
+      "police officer": {
+        "transitive": ["arrested", "handcuffed", "read rights to"],
+        "intransitive": ["patrolled", "responded to a 911 call"]
+      },
+      "firefighter": {
+        "transitive": ["rescued", "carried out"],
+        "intransitive": ["extinguished fire", "rescued"]
+      },
+      "surgeon": {
+        "transitive": ["operated on", "sutured", "incised"],
+        "intransitive": ["operated", "sutured"]
+      },
+      "mailman": {
+        "transitive": ["delivered mail to"],
+        "intransitive": ["delivered mail", "sorted mail"]
+      },
+      "waiter": {
+        "transitive": ["served", "took food orders from", "seated"],
+        "intransitive": ["served food", "waited tables"]
+      },
+      "judge": {
+        "transitive": ["sentenced", "gaveled", "ruled against"],
+        "intransitive": ["presided", "gaveled"]
+      },
+      "photographer": {
+        "transitive": ["photographed", "developed photos of", "shot"],
+        "intransitive": ["photographed"]
+      },
+      "principal": {
+        "transitive": ["expelled", "suspended", "disciplined"],
+        "intransitive": ["called an assembly", "toured the school"]
+      }
+    }
+  },
+  "vehicles": {
+    "truck": {
+      "transitive": ["jackknifed into", "towed"],
+      "intransitive": ["jackknifed"]
+    },
+    "motorcycle": {
+      "transitive": ["lane-split past", "wheelied at"],
+      "intransitive": ["wheelied"]
+    },
+    "airplane": {
+      "transitive": ["air-dropped on", "strafed"],
+      "intransitive": [ "taxied"]
+    },
+    "bicycle": {
+      "transitive": ["pedaled past", "rang the bell at", "cycled around"],
+      "intransitive": ["pedaled"]
+    },
+    "boat": {
+      "transitive": ["sailed past", "anchored near", "moored to"],
+      "intransitive": ["sailed", "anchored", "docked"]
+    },
+    "train": {
+      "transitive": ["whistled at"],
+      "intransitive": ["whistled", "steamed"]
+    },
+    "spaceship": {
+      "transitive": ["orbited"],
+      "intransitive": ["launched", "orbited", "blasted off into the sky"]
+    },
+    "ambulance": {
+      "transitive": ["blared the siren at"],
+      "intransitive": ["blared the siren"]
+    }
+  }
+}

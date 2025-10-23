@@ -1,0 +1,1610 @@
+{
+  "complexity_1": {
+    "sentences": [
+      {
+        "id": "complexity_1_sentence_1",
+        "sentence": "The horse that the elephant neighed at trumpeted.",
+        "structure": [
+          {
+            "subject": "horse",
+            "action": "trumpeted",
+            "object": null
+          },
+          {
+            "subject": "elephant",
+            "action": "neighed at",
+            "object": "horse"
+          }
+        ],
+        "middle_entity": "horse",
+        "all_entities": [
+          "elephant",
+          "horse"
+        ],
+        "questions_by_entity": {
+          "elephant": [
+            {
+              "question": "What did the elephant do?",
+              "answer": "neigh at the horse",
+              "type": "action_performed",
+              "difficulty": "easy",
+              "entity": "elephant",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What was affected by the elephant?",
+              "answer": "the horse",
+              "type": "agent_identification",
+              "difficulty": "easy",
+              "entity": "elephant",
+              "is_middle_entity": false
+            },
+            {
+              "question": "How many distinct entities are in the sentence?",
+              "answer": "2",
+              "type": "entity_count",
+              "difficulty": "medium",
+              "entity": "elephant",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What did the entity acted upon by the elephant do?",
+              "answer": "trumpeted",
+              "type": "nested_dependency",
+              "difficulty": "medium",
+              "entity": "elephant",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What series of events led to the elephant's action?",
+              "answer": "no prior events",
+              "type": "causal_sequence",
+              "difficulty": "hard",
+              "entity": "elephant",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What is the consequence of the elephant's involvement?",
+              "answer": "the horse trumpeted",
+              "type": "chain_consequence",
+              "difficulty": "hard",
+              "entity": "elephant",
+              "is_middle_entity": false
+            }
+          ],
+          "horse": [
+            {
+              "question": "What did the horse do?",
+              "answer": "trumpet",
+              "type": "action_performed",
+              "difficulty": "easy",
+              "entity": "horse",
+              "is_middle_entity": true
+            },
+            {
+              "question": "What neighed at the horse?",
+              "answer": "the elephant",
+              "type": "agent_identification",
+              "difficulty": "easy",
+              "entity": "horse",
+              "is_middle_entity": true
+            },
+            {
+              "question": "How many distinct entities are in the sentence?",
+              "answer": "2",
+              "type": "entity_count",
+              "difficulty": "medium",
+              "entity": "horse",
+              "is_middle_entity": true
+            },
+            {
+              "question": "What did the entity that was neighed at do?",
+              "answer": "trumpeted",
+              "type": "nested_dependency",
+              "difficulty": "medium",
+              "entity": "horse",
+              "is_middle_entity": true
+            },
+            {
+              "question": "What series of events led to the horse's action?",
+              "answer": "the elephant neighing at the horse",
+              "type": "causal_sequence",
+              "difficulty": "hard",
+              "entity": "horse",
+              "is_middle_entity": true
+            },
+            {
+              "question": "What is the consequence of the horse's involvement?",
+              "answer": "none",
+              "type": "chain_consequence",
+              "difficulty": "hard",
+              "entity": "horse",
+              "is_middle_entity": true
+            }
+          ]
+        },
+        "total_questions": 12
+      }
+    ]
+  },
+  "complexity_2": {
+    "sentences": [
+      {
+        "id": "complexity_2_sentence_1",
+        "sentence": "The bicycle that the airplane that the train pedaled past whistled at taxied.",
+        "structure": [
+          {
+            "subject": "bicycle",
+            "action": "taxied",
+            "object": null
+          },
+          {
+            "subject": "airplane",
+            "action": "whistled at",
+            "object": "bicycle"
+          },
+          {
+            "subject": "train",
+            "action": "pedaled past",
+            "object": "airplane"
+          }
+        ],
+        "middle_entity": "airplane",
+        "all_entities": [
+          "airplane",
+          "train",
+          "bicycle"
+        ],
+        "questions_by_entity": {
+          "airplane": [
+            {
+              "question": "What did the airplane do?",
+              "answer": "whistle at the bicycle",
+              "type": "action_performed",
+              "difficulty": "easy",
+              "entity": "airplane",
+              "is_middle_entity": true
+            },
+            {
+              "question": "What pedaled past the airplane?",
+              "answer": "the train",
+              "type": "agent_identification",
+              "difficulty": "easy",
+              "entity": "airplane",
+              "is_middle_entity": true
+            },
+            {
+              "question": "How many distinct entities are in the sentence?",
+              "answer": "3",
+              "type": "entity_count",
+              "difficulty": "medium",
+              "entity": "airplane",
+              "is_middle_entity": true
+            },
+            {
+              "question": "What did the entity that was pedaled past do?",
+              "answer": "whistled at the bicycle",
+              "type": "nested_dependency",
+              "difficulty": "medium",
+              "entity": "airplane",
+              "is_middle_entity": true
+            },
+            {
+              "question": "What series of events led to the airplane's action?",
+              "answer": "the train pedaling past the airplane",
+              "type": "causal_sequence",
+              "difficulty": "hard",
+              "entity": "airplane",
+              "is_middle_entity": true
+            },
+            {
+              "question": "What is the consequence of the airplane's involvement?",
+              "answer": "the bicycle taxied",
+              "type": "chain_consequence",
+              "difficulty": "hard",
+              "entity": "airplane",
+              "is_middle_entity": true
+            }
+          ],
+          "train": [
+            {
+              "question": "What did the train do?",
+              "answer": "pedal past the airplane",
+              "type": "action_performed",
+              "difficulty": "easy",
+              "entity": "train",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What was affected by the train?",
+              "answer": "the airplane",
+              "type": "agent_identification",
+              "difficulty": "easy",
+              "entity": "train",
+              "is_middle_entity": false
+            },
+            {
+              "question": "How many distinct entities are in the sentence?",
+              "answer": "3",
+              "type": "entity_count",
+              "difficulty": "medium",
+              "entity": "train",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What did the entity acted upon by the train do?",
+              "answer": "whistled at the bicycle",
+              "type": "nested_dependency",
+              "difficulty": "medium",
+              "entity": "train",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What series of events led to the train's action?",
+              "answer": "no prior events",
+              "type": "causal_sequence",
+              "difficulty": "hard",
+              "entity": "train",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What is the consequence of the train's involvement?",
+              "answer": "the airplane whistled at the bicycle",
+              "type": "chain_consequence",
+              "difficulty": "hard",
+              "entity": "train",
+              "is_middle_entity": false
+            }
+          ],
+          "bicycle": [
+            {
+              "question": "What did the bicycle do?",
+              "answer": "taxi",
+              "type": "action_performed",
+              "difficulty": "easy",
+              "entity": "bicycle",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What whistled at the bicycle?",
+              "answer": "the airplane",
+              "type": "agent_identification",
+              "difficulty": "easy",
+              "entity": "bicycle",
+              "is_middle_entity": false
+            },
+            {
+              "question": "How many distinct entities are in the sentence?",
+              "answer": "3",
+              "type": "entity_count",
+              "difficulty": "medium",
+              "entity": "bicycle",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What did the entity that was whistled at do?",
+              "answer": "taxied",
+              "type": "nested_dependency",
+              "difficulty": "medium",
+              "entity": "bicycle",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What series of events led to the bicycle's action?",
+              "answer": "the train pedaling past the airplane which led to the airplane whistling at the bicycle",
+              "type": "causal_sequence",
+              "difficulty": "hard",
+              "entity": "bicycle",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What is the consequence of the bicycle's involvement?",
+              "answer": "none",
+              "type": "chain_consequence",
+              "difficulty": "hard",
+              "entity": "bicycle",
+              "is_middle_entity": false
+            }
+          ]
+        },
+        "total_questions": 18
+      }
+    ]
+  },
+  "complexity_3": {
+    "sentences": [
+      {
+        "id": "complexity_3_sentence_1",
+        "sentence": "The skunk that the lion that the bat that the elephant sprayed at trumpeted at echolocated roared.",
+        "structure": [
+          {
+            "subject": "skunk",
+            "action": "roared",
+            "object": null
+          },
+          {
+            "subject": "lion",
+            "action": "echolocated",
+            "object": "skunk"
+          },
+          {
+            "subject": "bat",
+            "action": "trumpeted at",
+            "object": "lion"
+          },
+          {
+            "subject": "elephant",
+            "action": "sprayed at",
+            "object": "bat"
+          }
+        ],
+        "middle_entity": "lion",
+        "all_entities": [
+          "elephant",
+          "skunk",
+          "bat",
+          "lion"
+        ],
+        "questions_by_entity": {
+          "elephant": [
+            {
+              "question": "What did the elephant do?",
+              "answer": "spray at the bat",
+              "type": "action_performed",
+              "difficulty": "easy",
+              "entity": "elephant",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What was affected by the elephant?",
+              "answer": "the bat",
+              "type": "agent_identification",
+              "difficulty": "easy",
+              "entity": "elephant",
+              "is_middle_entity": false
+            },
+            {
+              "question": "How many distinct entities are in the sentence?",
+              "answer": "4",
+              "type": "entity_count",
+              "difficulty": "medium",
+              "entity": "elephant",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What did the entity acted upon by the elephant do?",
+              "answer": "trumpeted at the lion",
+              "type": "nested_dependency",
+              "difficulty": "medium",
+              "entity": "elephant",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What series of events led to the elephant's action?",
+              "answer": "no prior events",
+              "type": "causal_sequence",
+              "difficulty": "hard",
+              "entity": "elephant",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What is the consequence of the elephant's involvement?",
+              "answer": "the bat trumpeted at the lion",
+              "type": "chain_consequence",
+              "difficulty": "hard",
+              "entity": "elephant",
+              "is_middle_entity": false
+            }
+          ],
+          "skunk": [
+            {
+              "question": "What did the skunk do?",
+              "answer": "roar",
+              "type": "action_performed",
+              "difficulty": "easy",
+              "entity": "skunk",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What echolocated the skunk?",
+              "answer": "the lion",
+              "type": "agent_identification",
+              "difficulty": "easy",
+              "entity": "skunk",
+              "is_middle_entity": false
+            },
+            {
+              "question": "How many distinct entities are in the sentence?",
+              "answer": "4",
+              "type": "entity_count",
+              "difficulty": "medium",
+              "entity": "skunk",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What did the entity that was echolocated do?",
+              "answer": "roared",
+              "type": "nested_dependency",
+              "difficulty": "medium",
+              "entity": "skunk",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What series of events led to the skunk's action?",
+              "answer": "the elephant spraying at the bat which led to the bat trumpeting at the lion which led to the lion echolocating the skunk",
+              "type": "causal_sequence",
+              "difficulty": "hard",
+              "entity": "skunk",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What is the consequence of the skunk's involvement?",
+              "answer": "none",
+              "type": "chain_consequence",
+              "difficulty": "hard",
+              "entity": "skunk",
+              "is_middle_entity": false
+            }
+          ],
+          "bat": [
+            {
+              "question": "What did the bat do?",
+              "answer": "trumpet at the lion",
+              "type": "action_performed",
+              "difficulty": "easy",
+              "entity": "bat",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What sprayed at the bat?",
+              "answer": "the elephant",
+              "type": "agent_identification",
+              "difficulty": "easy",
+              "entity": "bat",
+              "is_middle_entity": false
+            },
+            {
+              "question": "How many distinct entities are in the sentence?",
+              "answer": "4",
+              "type": "entity_count",
+              "difficulty": "medium",
+              "entity": "bat",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What did the entity that was sprayed at do?",
+              "answer": "trumpeted at the lion",
+              "type": "nested_dependency",
+              "difficulty": "medium",
+              "entity": "bat",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What series of events led to the bat's action?",
+              "answer": "the elephant spraying at the bat",
+              "type": "causal_sequence",
+              "difficulty": "hard",
+              "entity": "bat",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What is the consequence of the bat's involvement?",
+              "answer": "the lion echolocated the skunk",
+              "type": "chain_consequence",
+              "difficulty": "hard",
+              "entity": "bat",
+              "is_middle_entity": false
+            }
+          ],
+          "lion": [
+            {
+              "question": "What did the lion do?",
+              "answer": "echolocate the skunk",
+              "type": "action_performed",
+              "difficulty": "easy",
+              "entity": "lion",
+              "is_middle_entity": true
+            },
+            {
+              "question": "What trumpeted at the lion?",
+              "answer": "the bat",
+              "type": "agent_identification",
+              "difficulty": "easy",
+              "entity": "lion",
+              "is_middle_entity": true
+            },
+            {
+              "question": "How many distinct entities are in the sentence?",
+              "answer": "4",
+              "type": "entity_count",
+              "difficulty": "medium",
+              "entity": "lion",
+              "is_middle_entity": true
+            },
+            {
+              "question": "What did the entity that was trumpeted at do?",
+              "answer": "echolocated the skunk",
+              "type": "nested_dependency",
+              "difficulty": "medium",
+              "entity": "lion",
+              "is_middle_entity": true
+            },
+            {
+              "question": "What series of events led to the lion's action?",
+              "answer": "the elephant spraying at the bat which led to the bat trumpeting at the lion",
+              "type": "causal_sequence",
+              "difficulty": "hard",
+              "entity": "lion",
+              "is_middle_entity": true
+            },
+            {
+              "question": "What is the consequence of the lion's involvement?",
+              "answer": "the skunk roared",
+              "type": "chain_consequence",
+              "difficulty": "hard",
+              "entity": "lion",
+              "is_middle_entity": true
+            }
+          ]
+        },
+        "total_questions": 24
+      }  
+    ]
+  },
+  "complexity_4": {
+    "sentences": [
+      {
+        "id": "complexity_4_sentence_1",
+        "sentence": "The police officer that the teacher that the mailman that the nurse that the photographer handcuffed photographed bandaged delivered mail to lectured.",
+        "structure": [
+          {
+            "subject": "police officer",
+            "action": "lectured",
+            "object": null
+          },
+          {
+            "subject": "teacher",
+            "action": "delivered mail to",
+            "object": "police officer"
+          },
+          {
+            "subject": "mailman",
+            "action": "bandaged",
+            "object": "teacher"
+          },
+          {
+            "subject": "nurse",
+            "action": "photographed",
+            "object": "mailman"
+          },
+          {
+            "subject": "photographer",
+            "action": "handcuffed",
+            "object": "nurse"
+          }
+        ],
+        "middle_entity": "mailman",
+        "all_entities": [
+          "mailman",
+          "teacher",
+          "police officer",
+          "photographer",
+          "nurse"
+        ],
+        "questions_by_entity": {
+          "mailman": [
+            {
+              "question": "What did the mailman do?",
+              "answer": "bandage the teacher",
+              "type": "action_performed",
+              "difficulty": "easy",
+              "entity": "mailman",
+              "is_middle_entity": true
+            },
+            {
+              "question": "Who photographed the mailman?",
+              "answer": "the nurse",
+              "type": "agent_identification",
+              "difficulty": "easy",
+              "entity": "mailman",
+              "is_middle_entity": true
+            },
+            {
+              "question": "How many distinct entities are in the sentence?",
+              "answer": "5",
+              "type": "entity_count",
+              "difficulty": "medium",
+              "entity": "mailman",
+              "is_middle_entity": true
+            },
+            {
+              "question": "What did the entity that was photographed do?",
+              "answer": "bandaged the teacher",
+              "type": "nested_dependency",
+              "difficulty": "medium",
+              "entity": "mailman",
+              "is_middle_entity": true
+            },
+            {
+              "question": "What series of events led to the mailman's action?",
+              "answer": "the photographer handcuffing the nurse which led to the nurse photographing the mailman",
+              "type": "causal_sequence",
+              "difficulty": "hard",
+              "entity": "mailman",
+              "is_middle_entity": true
+            },
+            {
+              "question": "What is the consequence of the mailman's involvement?",
+              "answer": "the teacher delivered mail to the police officer",
+              "type": "chain_consequence",
+              "difficulty": "hard",
+              "entity": "mailman",
+              "is_middle_entity": true
+            }
+          ],
+          "teacher": [
+            {
+              "question": "What did the teacher do?",
+              "answer": "deliver mail to the police officer",
+              "type": "action_performed",
+              "difficulty": "easy",
+              "entity": "teacher",
+              "is_middle_entity": false
+            },
+            {
+              "question": "Who bandaged the teacher?",
+              "answer": "the mailman",
+              "type": "agent_identification",
+              "difficulty": "easy",
+              "entity": "teacher",
+              "is_middle_entity": false
+            },
+            {
+              "question": "How many distinct entities are in the sentence?",
+              "answer": "5",
+              "type": "entity_count",
+              "difficulty": "medium",
+              "entity": "teacher",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What did the entity that was bandaged do?",
+              "answer": "delivered mail to the police officer",
+              "type": "nested_dependency",
+              "difficulty": "medium",
+              "entity": "teacher",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What series of events led to the teacher's action?",
+              "answer": "the photographer handcuffing the nurse which led to the nurse photographing the mailman which led to the mailman bandaging the teacher",
+              "type": "causal_sequence",
+              "difficulty": "hard",
+              "entity": "teacher",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What is the consequence of the teacher's involvement?",
+              "answer": "the police officer lectured",
+              "type": "chain_consequence",
+              "difficulty": "hard",
+              "entity": "teacher",
+              "is_middle_entity": false
+            }
+          ],
+          "police officer": [
+            {
+              "question": "What did the police officer do?",
+              "answer": "lecture",
+              "type": "action_performed",
+              "difficulty": "easy",
+              "entity": "police officer",
+              "is_middle_entity": false
+            },
+            {
+              "question": "Who delivered mail to the police officer?",
+              "answer": "the teacher",
+              "type": "agent_identification",
+              "difficulty": "easy",
+              "entity": "police officer",
+              "is_middle_entity": false
+            },
+            {
+              "question": "How many distinct entities are in the sentence?",
+              "answer": "5",
+              "type": "entity_count",
+              "difficulty": "medium",
+              "entity": "police officer",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What did the entity that was delivered mail do?",
+              "answer": "lectured",
+              "type": "nested_dependency",
+              "difficulty": "medium",
+              "entity": "police officer",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What series of events led to the police officer's action?",
+              "answer": "the photographer handcuffing the nurse which led to the nurse photographing the mailman which led to the mailman bandaging the teacher which led to the teacher delivering mail to the police officer",
+              "type": "causal_sequence",
+              "difficulty": "hard",
+              "entity": "police officer",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What is the consequence of the police officer's involvement?",
+              "answer": "none",
+              "type": "chain_consequence",
+              "difficulty": "hard",
+              "entity": "police officer",
+              "is_middle_entity": false
+            }
+          ],
+          "photographer": [
+            {
+              "question": "What did the photographer do?",
+              "answer": "handcuff the nurse",
+              "type": "action_performed",
+              "difficulty": "easy",
+              "entity": "photographer",
+              "is_middle_entity": false
+            },
+            {
+              "question": "Who was affected by the photographer?",
+              "answer": "the nurse",
+              "type": "agent_identification",
+              "difficulty": "easy",
+              "entity": "photographer",
+              "is_middle_entity": false
+            },
+            {
+              "question": "How many distinct entities are in the sentence?",
+              "answer": "5",
+              "type": "entity_count",
+              "difficulty": "medium",
+              "entity": "photographer",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What did the entity acted upon by the photographer do?",
+              "answer": "photographed the mailman",
+              "type": "nested_dependency",
+              "difficulty": "medium",
+              "entity": "photographer",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What series of events led to the photographer's action?",
+              "answer": "no prior events",
+              "type": "causal_sequence",
+              "difficulty": "hard",
+              "entity": "photographer",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What is the consequence of the photographer's involvement?",
+              "answer": "the nurse photographed the mailman",
+              "type": "chain_consequence",
+              "difficulty": "hard",
+              "entity": "photographer",
+              "is_middle_entity": false
+            }
+          ],
+          "nurse": [
+            {
+              "question": "What did the nurse do?",
+              "answer": "photograph the mailman",
+              "type": "action_performed",
+              "difficulty": "easy",
+              "entity": "nurse",
+              "is_middle_entity": false
+            },
+            {
+              "question": "Who handcuffed the nurse?",
+              "answer": "the photographer",
+              "type": "agent_identification",
+              "difficulty": "easy",
+              "entity": "nurse",
+              "is_middle_entity": false
+            },
+            {
+              "question": "How many distinct entities are in the sentence?",
+              "answer": "5",
+              "type": "entity_count",
+              "difficulty": "medium",
+              "entity": "nurse",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What did the entity that was handcuffed do?",
+              "answer": "photographed the mailman",
+              "type": "nested_dependency",
+              "difficulty": "medium",
+              "entity": "nurse",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What series of events led to the nurse's action?",
+              "answer": "the photographer handcuffing the nurse",
+              "type": "causal_sequence",
+              "difficulty": "hard",
+              "entity": "nurse",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What is the consequence of the nurse's involvement?",
+              "answer": "the mailman bandaged the teacher",
+              "type": "chain_consequence",
+              "difficulty": "hard",
+              "entity": "nurse",
+              "is_middle_entity": false
+            }
+          ]
+        },
+        "total_questions": 30
+      }
+    ]
+  },
+  "complexity_5": {
+    "sentences": [
+      {
+        "id": "complexity_5_sentence_1",
+        "sentence": "The lawyer that the photographer that the firefighter that the judge that the waiter that the police officer subpoenaed arrested took food orders from ruled against rescued photographed.",
+        "structure": [
+          {
+            "subject": "lawyer",
+            "action": "photographed",
+            "object": null
+          },
+          {
+            "subject": "photographer",
+            "action": "rescued",
+            "object": "lawyer"
+          },
+          {
+            "subject": "firefighter",
+            "action": "ruled against",
+            "object": "photographer"
+          },
+          {
+            "subject": "judge",
+            "action": "took food orders from",
+            "object": "firefighter"
+          },
+          {
+            "subject": "waiter",
+            "action": "arrested",
+            "object": "judge"
+          },
+          {
+            "subject": "police officer",
+            "action": "subpoenaed",
+            "object": "waiter"
+          }
+        ],
+        "middle_entity": "firefighter",
+        "all_entities": [
+          "lawyer",
+          "waiter",
+          "police officer",
+          "judge",
+          "photographer",
+          "firefighter"
+        ],
+        "questions_by_entity": {
+          "lawyer": [
+            {
+              "question": "What did the lawyer do?",
+              "answer": "photograph",
+              "type": "action_performed",
+              "difficulty": "easy",
+              "entity": "lawyer",
+              "is_middle_entity": false
+            },
+            {
+              "question": "Who rescued the lawyer?",
+              "answer": "the photographer",
+              "type": "agent_identification",
+              "difficulty": "easy",
+              "entity": "lawyer",
+              "is_middle_entity": false
+            },
+            {
+              "question": "How many distinct entities are in the sentence?",
+              "answer": "6",
+              "type": "entity_count",
+              "difficulty": "medium",
+              "entity": "lawyer",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What did the entity that was rescued do?",
+              "answer": "photographed",
+              "type": "nested_dependency",
+              "difficulty": "medium",
+              "entity": "lawyer",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What series of events led to the lawyer's action?",
+              "answer": "the police officer subpoenaing the waiter which led to the waiter arresting the judge which led to the judge taking food orders from the firefighter which led to the firefighter ruling against the photographer which led to the photographer rescuing the lawyer",
+              "type": "causal_sequence",
+              "difficulty": "hard",
+              "entity": "lawyer",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What is the consequence of the lawyer's involvement?",
+              "answer": "none",
+              "type": "chain_consequence",
+              "difficulty": "hard",
+              "entity": "lawyer",
+              "is_middle_entity": false
+            }
+          ],
+          "waiter": [
+            {
+              "question": "What did the waiter do?",
+              "answer": "arrest the judge",
+              "type": "action_performed",
+              "difficulty": "easy",
+              "entity": "waiter",
+              "is_middle_entity": false
+            },
+            {
+              "question": "Who subpoenaed the waiter?",
+              "answer": "the police officer",
+              "type": "agent_identification",
+              "difficulty": "easy",
+              "entity": "waiter",
+              "is_middle_entity": false
+            },
+            {
+              "question": "How many distinct entities are in the sentence?",
+              "answer": "6",
+              "type": "entity_count",
+              "difficulty": "medium",
+              "entity": "waiter",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What did the entity that was subpoenaed do?",
+              "answer": "arrested the judge",
+              "type": "nested_dependency",
+              "difficulty": "medium",
+              "entity": "waiter",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What series of events led to the waiter's action?",
+              "answer": "the police officer subpoenaing the waiter",
+              "type": "causal_sequence",
+              "difficulty": "hard",
+              "entity": "waiter",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What is the consequence of the waiter's involvement?",
+              "answer": "the judge took food orders from the firefighter",
+              "type": "chain_consequence",
+              "difficulty": "hard",
+              "entity": "waiter",
+              "is_middle_entity": false
+            }
+          ],
+          "police officer": [
+            {
+              "question": "What did the police officer do?",
+              "answer": "subpoena the waiter",
+              "type": "action_performed",
+              "difficulty": "easy",
+              "entity": "police officer",
+              "is_middle_entity": false
+            },
+            {
+              "question": "Who was affected by the police officer?",
+              "answer": "the waiter",
+              "type": "agent_identification",
+              "difficulty": "easy",
+              "entity": "police officer",
+              "is_middle_entity": false
+            },
+            {
+              "question": "How many distinct entities are in the sentence?",
+              "answer": "6",
+              "type": "entity_count",
+              "difficulty": "medium",
+              "entity": "police officer",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What did the entity acted upon by the police officer do?",
+              "answer": "arrested the judge",
+              "type": "nested_dependency",
+              "difficulty": "medium",
+              "entity": "police officer",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What series of events led to the police officer's action?",
+              "answer": "no prior events",
+              "type": "causal_sequence",
+              "difficulty": "hard",
+              "entity": "police officer",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What is the consequence of the police officer's involvement?",
+              "answer": "the waiter arrested the judge",
+              "type": "chain_consequence",
+              "difficulty": "hard",
+              "entity": "police officer",
+              "is_middle_entity": false
+            }
+          ],
+          "judge": [
+            {
+              "question": "What did the judge do?",
+              "answer": "take food orders from the firefighter",
+              "type": "action_performed",
+              "difficulty": "easy",
+              "entity": "judge",
+              "is_middle_entity": false
+            },
+            {
+              "question": "Who arrested the judge?",
+              "answer": "the waiter",
+              "type": "agent_identification",
+              "difficulty": "easy",
+              "entity": "judge",
+              "is_middle_entity": false
+            },
+            {
+              "question": "How many distinct entities are in the sentence?",
+              "answer": "6",
+              "type": "entity_count",
+              "difficulty": "medium",
+              "entity": "judge",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What did the entity that was arrested do?",
+              "answer": "took food orders from the firefighter",
+              "type": "nested_dependency",
+              "difficulty": "medium",
+              "entity": "judge",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What series of events led to the judge's action?",
+              "answer": "the police officer subpoenaing the waiter which led to the waiter arresting the judge",
+              "type": "causal_sequence",
+              "difficulty": "hard",
+              "entity": "judge",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What is the consequence of the judge's involvement?",
+              "answer": "the firefighter ruled against the photographer",
+              "type": "chain_consequence",
+              "difficulty": "hard",
+              "entity": "judge",
+              "is_middle_entity": false
+            }
+          ],
+          "photographer": [
+            {
+              "question": "What did the photographer do?",
+              "answer": "rescue the lawyer",
+              "type": "action_performed",
+              "difficulty": "easy",
+              "entity": "photographer",
+              "is_middle_entity": false
+            },
+            {
+              "question": "Who ruled against the photographer?",
+              "answer": "the firefighter",
+              "type": "agent_identification",
+              "difficulty": "easy",
+              "entity": "photographer",
+              "is_middle_entity": false
+            },
+            {
+              "question": "How many distinct entities are in the sentence?",
+              "answer": "6",
+              "type": "entity_count",
+              "difficulty": "medium",
+              "entity": "photographer",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What did the entity that was ruled against do?",
+              "answer": "rescued the lawyer",
+              "type": "nested_dependency",
+              "difficulty": "medium",
+              "entity": "photographer",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What series of events led to the photographer's action?",
+              "answer": "the police officer subpoenaing the waiter which led to the waiter arresting the judge which led to the judge taking food orders from the firefighter which led to the firefighter ruling against the photographer",
+              "type": "causal_sequence",
+              "difficulty": "hard",
+              "entity": "photographer",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What is the consequence of the photographer's involvement?",
+              "answer": "the lawyer photographed",
+              "type": "chain_consequence",
+              "difficulty": "hard",
+              "entity": "photographer",
+              "is_middle_entity": false
+            }
+          ],
+          "firefighter": [
+            {
+              "question": "What did the firefighter do?",
+              "answer": "rule against the photographer",
+              "type": "action_performed",
+              "difficulty": "easy",
+              "entity": "firefighter",
+              "is_middle_entity": true
+            },
+            {
+              "question": "Who took food orders from the firefighter?",
+              "answer": "the judge",
+              "type": "agent_identification",
+              "difficulty": "easy",
+              "entity": "firefighter",
+              "is_middle_entity": true
+            },
+            {
+              "question": "How many distinct entities are in the sentence?",
+              "answer": "6",
+              "type": "entity_count",
+              "difficulty": "medium",
+              "entity": "firefighter",
+              "is_middle_entity": true
+            },
+            {
+              "question": "What did the entity whose order was taken do?",
+              "answer": "ruled against the photographer",
+              "type": "nested_dependency",
+              "difficulty": "medium",
+              "entity": "firefighter",
+              "is_middle_entity": true
+            },
+            {
+              "question": "What series of events led to the firefighter's action?",
+              "answer": "the police officer subpoenaing the waiter which led to the waiter arresting the judge which led to the judge taking food orders from the firefighter",
+              "type": "causal_sequence",
+              "difficulty": "hard",
+              "entity": "firefighter",
+              "is_middle_entity": true
+            },
+            {
+              "question": "What is the consequence of the firefighter's involvement?",
+              "answer": "the photographer rescued the lawyer",
+              "type": "chain_consequence",
+              "difficulty": "hard",
+              "entity": "firefighter",
+              "is_middle_entity": true
+            }
+          ]
+        },
+        "total_questions": 36
+      }
+    ]
+  },
+  "complexity_6": {
+    "sentences": [
+      {
+        "id": "complexity_6_sentence_1",
+        "sentence": "The starfish that the horse that the lizard that the seagull that the vulture that the duck that the bee crawled toward stung paddled toward scavenged from dive-bombed basked toward neighed.",
+        "structure": [
+          {
+            "subject": "starfish",
+            "action": "neighed",
+            "object": null
+          },
+          {
+            "subject": "horse",
+            "action": "basked toward",
+            "object": "starfish"
+          },
+          {
+            "subject": "lizard",
+            "action": "dive-bombed",
+            "object": "horse"
+          },
+          {
+            "subject": "seagull",
+            "action": "scavenged from",
+            "object": "lizard"
+          },
+          {
+            "subject": "vulture",
+            "action": "paddled toward",
+            "object": "seagull"
+          },
+          {
+            "subject": "duck",
+            "action": "stung",
+            "object": "vulture"
+          },
+          {
+            "subject": "bee",
+            "action": "crawled toward",
+            "object": "duck"
+          }
+        ],
+        "middle_entity": "seagull",
+        "all_entities": [
+          "lizard",
+          "bee",
+          "starfish",
+          "duck",
+          "seagull",
+          "vulture",
+          "horse"
+        ],
+        "questions_by_entity": {
+          "lizard": [
+            {
+              "question": "What did the lizard do?",
+              "answer": "dive-bomb the horse",
+              "type": "action_performed",
+              "difficulty": "easy",
+              "entity": "lizard",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What scavenged from the lizard?",
+              "answer": "the seagull",
+              "type": "agent_identification",
+              "difficulty": "easy",
+              "entity": "lizard",
+              "is_middle_entity": false
+            },
+            {
+              "question": "How many distinct entities are in the sentence?",
+              "answer": "7",
+              "type": "entity_count",
+              "difficulty": "medium",
+              "entity": "lizard",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What did the entity that was scavenged from do?",
+              "answer": "dive-bombed the horse",
+              "type": "nested_dependency",
+              "difficulty": "medium",
+              "entity": "lizard",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What series of events led to the lizard's action?",
+              "answer": "the bee crawling toward the duck which led to the duck stinging the vulture which led to the vulture paddling toward the seagull which led to the seagull scavenging from the lizard",
+              "type": "causal_sequence",
+              "difficulty": "hard",
+              "entity": "lizard",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What is the consequence of the lizard's involvement?",
+              "answer": "the horse basked toward the starfish",
+              "type": "chain_consequence",
+              "difficulty": "hard",
+              "entity": "lizard",
+              "is_middle_entity": false
+            }
+          ],
+          "bee": [
+            {
+              "question": "What did the bee do?",
+              "answer": "crawl toward the duck",
+              "type": "action_performed",
+              "difficulty": "easy",
+              "entity": "bee",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What was affected by the bee?",
+              "answer": "the duck",
+              "type": "agent_identification",
+              "difficulty": "easy",
+              "entity": "bee",
+              "is_middle_entity": false
+            },
+            {
+              "question": "How many distinct entities are in the sentence?",
+              "answer": "7",
+              "type": "entity_count",
+              "difficulty": "medium",
+              "entity": "bee",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What did the entity acted upon by the bee do?",
+              "answer": "stung the vulture",
+              "type": "nested_dependency",
+              "difficulty": "medium",
+              "entity": "bee",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What series of events led to the bee's action?",
+              "answer": "no prior events",
+              "type": "causal_sequence",
+              "difficulty": "hard",
+              "entity": "bee",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What is the consequence of the bee's involvement?",
+              "answer": "the duck stung the vulture",
+              "type": "chain_consequence",
+              "difficulty": "hard",
+              "entity": "bee",
+              "is_middle_entity": false
+            }
+          ],
+          "starfish": [
+            {
+              "question": "What did the starfish do?",
+              "answer": "neigh",
+              "type": "action_performed",
+              "difficulty": "easy",
+              "entity": "starfish",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What basked toward the starfish?",
+              "answer": "the horse",
+              "type": "agent_identification",
+              "difficulty": "easy",
+              "entity": "starfish",
+              "is_middle_entity": false
+            },
+            {
+              "question": "How many distinct entities are in the sentence?",
+              "answer": "7",
+              "type": "entity_count",
+              "difficulty": "medium",
+              "entity": "starfish",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What did the entity that was basked toward do?",
+              "answer": "neighed",
+              "type": "nested_dependency",
+              "difficulty": "medium",
+              "entity": "starfish",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What series of events led to the starfish's action?",
+              "answer": "the bee crawling toward the duck which led to the duck stinging the vulture which led to the vulture paddling toward the seagull which led to the seagull scavenging from the lizard which led to the lizard dive-bombing the horse which led to the horse basking toward the starfish",
+              "type": "causal_sequence",
+              "difficulty": "hard",
+              "entity": "starfish",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What is the consequence of the starfish's involvement?",
+              "answer": "none",
+              "type": "chain_consequence",
+              "difficulty": "hard",
+              "entity": "starfish",
+              "is_middle_entity": false
+            }
+          ],
+          "duck": [
+            {
+              "question": "What did the duck do?",
+              "answer": "sting the vulture",
+              "type": "action_performed",
+              "difficulty": "easy",
+              "entity": "duck",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What crawled toward the duck?",
+              "answer": "the bee",
+              "type": "agent_identification",
+              "difficulty": "easy",
+              "entity": "duck",
+              "is_middle_entity": false
+            },
+            {
+              "question": "How many distinct entities are in the sentence?",
+              "answer": "7",
+              "type": "entity_count",
+              "difficulty": "medium",
+              "entity": "duck",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What did the entity that was crawled toward do?",
+              "answer": "stung the vulture",
+              "type": "nested_dependency",
+              "difficulty": "medium",
+              "entity": "duck",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What series of events led to the duck's action?",
+              "answer": "the bee crawling toward the duck",
+              "type": "causal_sequence",
+              "difficulty": "hard",
+              "entity": "duck",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What is the consequence of the duck's involvement?",
+              "answer": "the vulture paddled toward the seagull",
+              "type": "chain_consequence",
+              "difficulty": "hard",
+              "entity": "duck",
+              "is_middle_entity": false
+            }
+          ],
+          "seagull": [
+            {
+              "question": "What did the seagull do?",
+              "answer": "scavenge from the lizard",
+              "type": "action_performed",
+              "difficulty": "easy",
+              "entity": "seagull",
+              "is_middle_entity": true
+            },
+            {
+              "question": "What paddled toward the seagull?",
+              "answer": "the vulture",
+              "type": "agent_identification",
+              "difficulty": "easy",
+              "entity": "seagull",
+              "is_middle_entity": true
+            },
+            {
+              "question": "How many distinct entities are in the sentence?",
+              "answer": "7",
+              "type": "entity_count",
+              "difficulty": "medium",
+              "entity": "seagull",
+              "is_middle_entity": true
+            },
+            {
+              "question": "What did the entity that was paddled toward do?",
+              "answer": "scavenged from the lizard",
+              "type": "nested_dependency",
+              "difficulty": "medium",
+              "entity": "seagull",
+              "is_middle_entity": true
+            },
+            {
+              "question": "What series of events led to the seagull's action?",
+              "answer": "the bee crawling toward the duck which led to the duck stinging the vulture which led to the vulture paddling toward the seagull",
+              "type": "causal_sequence",
+              "difficulty": "hard",
+              "entity": "seagull",
+              "is_middle_entity": true
+            },
+            {
+              "question": "What is the consequence of the seagull's involvement?",
+              "answer": "the lizard dive-bombed the horse",
+              "type": "chain_consequence",
+              "difficulty": "hard",
+              "entity": "seagull",
+              "is_middle_entity": true
+            }
+          ],
+          "vulture": [
+            {
+              "question": "What did the vulture do?",
+              "answer": "paddle toward the seagull",
+              "type": "action_performed",
+              "difficulty": "easy",
+              "entity": "vulture",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What stung the vulture?",
+              "answer": "the duck",
+              "type": "agent_identification",
+              "difficulty": "easy",
+              "entity": "vulture",
+              "is_middle_entity": false
+            },
+            {
+              "question": "How many distinct entities are in the sentence?",
+              "answer": "7",
+              "type": "entity_count",
+              "difficulty": "medium",
+              "entity": "vulture",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What did the entity that was stung do?",
+              "answer": "paddled toward the seagull",
+              "type": "nested_dependency",
+              "difficulty": "medium",
+              "entity": "vulture",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What series of events led to the vulture's action?",
+              "answer": "the bee crawling toward the duck which led to the duck stinging the vulture",
+              "type": "causal_sequence",
+              "difficulty": "hard",
+              "entity": "vulture",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What is the consequence of the vulture's involvement?",
+              "answer": "the seagull scavenged from the lizard",
+              "type": "chain_consequence",
+              "difficulty": "hard",
+              "entity": "vulture",
+              "is_middle_entity": false
+            }
+          ],
+          "horse": [
+            {
+              "question": "What did the horse do?",
+              "answer": "bask toward the starfish",
+              "type": "action_performed",
+              "difficulty": "easy",
+              "entity": "horse",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What dive-bombed the horse?",
+              "answer": "the lizard",
+              "type": "agent_identification",
+              "difficulty": "easy",
+              "entity": "horse",
+              "is_middle_entity": false
+            },
+            {
+              "question": "How many distinct entities are in the sentence?",
+              "answer": "7",
+              "type": "entity_count",
+              "difficulty": "medium",
+              "entity": "horse",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What did the entity that was dive-bombed do?",
+              "answer": "basked toward the starfish",
+              "type": "nested_dependency",
+              "difficulty": "medium",
+              "entity": "horse",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What series of events led to the horse's action?",
+              "answer": "the bee crawling toward the duck which led to the duck stinging the vulture which led to the vulture paddling toward the seagull which led to the seagull scavenging from the lizard which led to the lizard dive-bombing the horse",
+              "type": "causal_sequence",
+              "difficulty": "hard",
+              "entity": "horse",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What is the consequence of the horse's involvement?",
+              "answer": "the starfish neighed",
+              "type": "chain_consequence",
+              "difficulty": "hard",
+              "entity": "horse",
+              "is_middle_entity": false
+            }
+          ]
+        },
+        "total_questions": 42
+      }
+    ]
+  }
+}

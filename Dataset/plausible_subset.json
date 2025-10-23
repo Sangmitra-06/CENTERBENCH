@@ -1,0 +1,1610 @@
+{
+  "complexity_1": {
+    "sentences": [
+      {
+        "id": "complexity_1_sentence_1",
+        "sentence": "The cat that the mouse evaded pounced.",
+        "structure": [
+          {
+            "subject": "cat",
+            "action": "pounced",
+            "object": null
+          },
+          {
+            "subject": "mouse",
+            "action": "evaded",
+            "object": "cat"
+          }
+        ],
+        "middle_entity": "cat",
+        "all_entities": [
+          "cat",
+          "mouse"
+        ],
+        "questions_by_entity": {
+          "cat": [
+            {
+              "question": "What did the cat do?",
+              "answer": "pounce",
+              "type": "action_performed",
+              "difficulty": "easy",
+              "entity": "cat",
+              "is_middle_entity": true
+            },
+            {
+              "question": "What evaded the cat?",
+              "answer": "the mouse",
+              "type": "agent_identification",
+              "difficulty": "easy",
+              "entity": "cat",
+              "is_middle_entity": true
+            },
+            {
+              "question": "How many distinct entities are in the sentence?",
+              "answer": "2",
+              "type": "entity_count",
+              "difficulty": "medium",
+              "entity": "cat",
+              "is_middle_entity": true
+            },
+            {
+              "question": "What did the entity that was evaded do?",
+              "answer": "pounced",
+              "type": "nested_dependency",
+              "difficulty": "medium",
+              "entity": "cat",
+              "is_middle_entity": true
+            },
+            {
+              "question": "What series of events led to the cat's action?",
+              "answer": "the mouse evading the cat",
+              "type": "causal_sequence",
+              "difficulty": "hard",
+              "entity": "cat",
+              "is_middle_entity": true
+            },
+            {
+              "question": "What is the consequence of the cat's involvement?",
+              "answer": "none",
+              "type": "chain_consequence",
+              "difficulty": "hard",
+              "entity": "cat",
+              "is_middle_entity": true
+            }
+          ],
+          "mouse": [
+            {
+              "question": "What did the mouse do?",
+              "answer": "evade the cat",
+              "type": "action_performed",
+              "difficulty": "easy",
+              "entity": "mouse",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What was affected by the mouse?",
+              "answer": "the cat",
+              "type": "agent_identification",
+              "difficulty": "easy",
+              "entity": "mouse",
+              "is_middle_entity": false
+            },
+            {
+              "question": "How many distinct entities are in the sentence?",
+              "answer": "2",
+              "type": "entity_count",
+              "difficulty": "medium",
+              "entity": "mouse",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What did the entity acted upon by the mouse do?",
+              "answer": "pounced",
+              "type": "nested_dependency",
+              "difficulty": "medium",
+              "entity": "mouse",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What series of events led to the mouse's action?",
+              "answer": "no prior events",
+              "type": "causal_sequence",
+              "difficulty": "hard",
+              "entity": "mouse",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What is the consequence of the mouse's involvement?",
+              "answer": "the cat pounced",
+              "type": "chain_consequence",
+              "difficulty": "hard",
+              "entity": "mouse",
+              "is_middle_entity": false
+            }
+          ]
+        },
+        "total_questions": 12
+      }
+    ]
+  },
+  "complexity_2": {
+    "sentences": [
+      {
+        "id": "complexity_2_sentence_1",
+        "sentence": "The bicycle that the car that the truck hit bumped fell over.",
+        "structure": [
+          {
+            "subject": "bicycle",
+            "action": "fell over",
+            "object": null
+          },
+          {
+            "subject": "car",
+            "action": "bumped",
+            "object": "bicycle"
+          },
+          {
+            "subject": "truck",
+            "action": "hit",
+            "object": "car"
+          }
+        ],
+        "middle_entity": "car",
+        "all_entities": [
+          "truck",
+          "bicycle",
+          "car"
+        ],
+        "questions_by_entity": {
+          "truck": [
+            {
+              "question": "What did the truck do?",
+              "answer": "hit the car",
+              "type": "action_performed",
+              "difficulty": "easy",
+              "entity": "truck",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What was affected by the truck?",
+              "answer": "the car",
+              "type": "agent_identification",
+              "difficulty": "easy",
+              "entity": "truck",
+              "is_middle_entity": false
+            },
+            {
+              "question": "How many distinct entities are in the sentence?",
+              "answer": "3",
+              "type": "entity_count",
+              "difficulty": "medium",
+              "entity": "truck",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What did the entity acted upon by the truck do?",
+              "answer": "bumped the bicycle",
+              "type": "nested_dependency",
+              "difficulty": "medium",
+              "entity": "truck",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What series of events led to the truck's action?",
+              "answer": "no prior events",
+              "type": "causal_sequence",
+              "difficulty": "hard",
+              "entity": "truck",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What is the consequence of the truck's involvement?",
+              "answer": "the car bumped the bicycle",
+              "type": "chain_consequence",
+              "difficulty": "hard",
+              "entity": "truck",
+              "is_middle_entity": false
+            }
+          ],
+          "bicycle": [
+            {
+              "question": "What did the bicycle do?",
+              "answer": "fall over",
+              "type": "action_performed",
+              "difficulty": "easy",
+              "entity": "bicycle",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What bumped the bicycle?",
+              "answer": "the car",
+              "type": "agent_identification",
+              "difficulty": "easy",
+              "entity": "bicycle",
+              "is_middle_entity": false
+            },
+            {
+              "question": "How many distinct entities are in the sentence?",
+              "answer": "3",
+              "type": "entity_count",
+              "difficulty": "medium",
+              "entity": "bicycle",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What did the entity that was bumped do?",
+              "answer": "fell over",
+              "type": "nested_dependency",
+              "difficulty": "medium",
+              "entity": "bicycle",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What series of events led to the bicycle's action?",
+              "answer": "the truck hitting the car which led to the car bumping the bicycle",
+              "type": "causal_sequence",
+              "difficulty": "hard",
+              "entity": "bicycle",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What is the consequence of the bicycle's involvement?",
+              "answer": "none",
+              "type": "chain_consequence",
+              "difficulty": "hard",
+              "entity": "bicycle",
+              "is_middle_entity": false
+            }
+          ],
+          "car": [
+            {
+              "question": "What did the car do?",
+              "answer": "bump the bicycle",
+              "type": "action_performed",
+              "difficulty": "easy",
+              "entity": "car",
+              "is_middle_entity": true
+            },
+            {
+              "question": "What hit the car?",
+              "answer": "the truck",
+              "type": "agent_identification",
+              "difficulty": "easy",
+              "entity": "car",
+              "is_middle_entity": true
+            },
+            {
+              "question": "How many distinct entities are in the sentence?",
+              "answer": "3",
+              "type": "entity_count",
+              "difficulty": "medium",
+              "entity": "car",
+              "is_middle_entity": true
+            },
+            {
+              "question": "What did the entity that was hit do?",
+              "answer": "bumped the bicycle",
+              "type": "nested_dependency",
+              "difficulty": "medium",
+              "entity": "car",
+              "is_middle_entity": true
+            },
+            {
+              "question": "What series of events led to the car's action?",
+              "answer": "the truck hitting the car",
+              "type": "causal_sequence",
+              "difficulty": "hard",
+              "entity": "car",
+              "is_middle_entity": true
+            },
+            {
+              "question": "What is the consequence of the car's involvement?",
+              "answer": "the bicycle fell over",
+              "type": "chain_consequence",
+              "difficulty": "hard",
+              "entity": "car",
+              "is_middle_entity": true
+            }
+          ]
+        },
+        "total_questions": 18
+      }
+    ]
+  },
+  "complexity_3": {
+    "sentences": [
+      {
+        "id": "complexity_3_sentence_1",
+        "sentence": "The fly that the spider that the bird that the snake hissed at saw caught died.",
+        "structure": [
+          {
+            "subject": "fly",
+            "action": "died",
+            "object": null
+          },
+          {
+            "subject": "spider",
+            "action": "caught",
+            "object": "fly"
+          },
+          {
+            "subject": "bird",
+            "action": "saw",
+            "object": "spider"
+          },
+          {
+            "subject": "snake",
+            "action": "hissed at",
+            "object": "bird"
+          }
+        ],
+        "middle_entity": "spider",
+        "all_entities": [
+          "bird",
+          "snake",
+          "spider",
+          "fly"
+        ],
+        "questions_by_entity": {
+          "bird": [
+            {
+              "question": "What did the bird do?",
+              "answer": "see the spider",
+              "type": "action_performed",
+              "difficulty": "easy",
+              "entity": "bird",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What hissed at the bird?",
+              "answer": "the snake",
+              "type": "agent_identification",
+              "difficulty": "easy",
+              "entity": "bird",
+              "is_middle_entity": false
+            },
+            {
+              "question": "How many distinct entities are in the sentence?",
+              "answer": "4",
+              "type": "entity_count",
+              "difficulty": "medium",
+              "entity": "bird",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What did the entity that was hissed at do?",
+              "answer": "saw the spider",
+              "type": "nested_dependency",
+              "difficulty": "medium",
+              "entity": "bird",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What series of events led to the bird's action?",
+              "answer": "the snake hissing at the bird",
+              "type": "causal_sequence",
+              "difficulty": "hard",
+              "entity": "bird",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What is the consequence of the bird's involvement?",
+              "answer": "the spider caught the fly",
+              "type": "chain_consequence",
+              "difficulty": "hard",
+              "entity": "bird",
+              "is_middle_entity": false
+            }
+          ],
+          "snake": [
+            {
+              "question": "What did the snake do?",
+              "answer": "hiss at the bird",
+              "type": "action_performed",
+              "difficulty": "easy",
+              "entity": "snake",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What was affected by the snake?",
+              "answer": "the bird",
+              "type": "agent_identification",
+              "difficulty": "easy",
+              "entity": "snake",
+              "is_middle_entity": false
+            },
+            {
+              "question": "How many distinct entities are in the sentence?",
+              "answer": "4",
+              "type": "entity_count",
+              "difficulty": "medium",
+              "entity": "snake",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What did the entity acted upon by the snake do?",
+              "answer": "saw the spider",
+              "type": "nested_dependency",
+              "difficulty": "medium",
+              "entity": "snake",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What series of events led to the snake's action?",
+              "answer": "no prior events",
+              "type": "causal_sequence",
+              "difficulty": "hard",
+              "entity": "snake",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What is the consequence of the snake's involvement?",
+              "answer": "the bird saw the spider",
+              "type": "chain_consequence",
+              "difficulty": "hard",
+              "entity": "snake",
+              "is_middle_entity": false
+            }
+          ],
+          "spider": [
+            {
+              "question": "What did the spider do?",
+              "answer": "catch the fly",
+              "type": "action_performed",
+              "difficulty": "easy",
+              "entity": "spider",
+              "is_middle_entity": true
+            },
+            {
+              "question": "What saw the spider?",
+              "answer": "the bird",
+              "type": "agent_identification",
+              "difficulty": "easy",
+              "entity": "spider",
+              "is_middle_entity": true
+            },
+            {
+              "question": "How many distinct entities are in the sentence?",
+              "answer": "4",
+              "type": "entity_count",
+              "difficulty": "medium",
+              "entity": "spider",
+              "is_middle_entity": true
+            },
+            {
+              "question": "What did the entity that was seen do?",
+              "answer": "caught the fly",
+              "type": "nested_dependency",
+              "difficulty": "medium",
+              "entity": "spider",
+              "is_middle_entity": true
+            },
+            {
+              "question": "What series of events led to the spider's action?",
+              "answer": "the snake hissing at the bird which led to the bird seeing the spider",
+              "type": "causal_sequence",
+              "difficulty": "hard",
+              "entity": "spider",
+              "is_middle_entity": true
+            },
+            {
+              "question": "What is the consequence of the spider's involvement?",
+              "answer": "the fly died",
+              "type": "chain_consequence",
+              "difficulty": "hard",
+              "entity": "spider",
+              "is_middle_entity": true
+            }
+          ],
+          "fly": [
+            {
+              "question": "What did the fly do?",
+              "answer": "die",
+              "type": "action_performed",
+              "difficulty": "easy",
+              "entity": "fly",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What caught the fly?",
+              "answer": "the spider",
+              "type": "agent_identification",
+              "difficulty": "easy",
+              "entity": "fly",
+              "is_middle_entity": false
+            },
+            {
+              "question": "How many distinct entities are in the sentence?",
+              "answer": "4",
+              "type": "entity_count",
+              "difficulty": "medium",
+              "entity": "fly",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What did the entity that was caught do?",
+              "answer": "died",
+              "type": "nested_dependency",
+              "difficulty": "medium",
+              "entity": "fly",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What series of events led to the fly's action?",
+              "answer": "the snake hissing at the bird which led to the bird seeing the spider which led to the spider catching the fly",
+              "type": "causal_sequence",
+              "difficulty": "hard",
+              "entity": "fly",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What is the consequence of the fly's involvement?",
+              "answer": "none",
+              "type": "chain_consequence",
+              "difficulty": "hard",
+              "entity": "fly",
+              "is_middle_entity": false
+            }
+          ]
+        },
+        "total_questions": 24
+      }
+    ]
+  },
+  "complexity_4": {
+    "sentences": [
+      {
+        "id": "complexity_4_sentence_1",
+        "sentence": "The beetle that the bird that the cat that the toddler that the mother watched scared caught saw crawled.",
+        "structure": [
+          {
+            "subject": "beetle",
+            "action": "crawled",
+            "object": null
+          },
+          {
+            "subject": "bird",
+            "action": "saw",
+            "object": "beetle"
+          },
+          {
+            "subject": "cat",
+            "action": "caught",
+            "object": "bird"
+          },
+          {
+            "subject": "toddler",
+            "action": "scared",
+            "object": "cat"
+          },
+          {
+            "subject": "mother",
+            "action": "watched",
+            "object": "toddler"
+          }
+        ],
+        "middle_entity": "cat",
+        "all_entities": [
+          "toddler",
+          "mother",
+          "beetle",
+          "bird",
+          "cat"
+        ],
+        "questions_by_entity": {
+          "toddler": [
+            {
+              "question": "What did the toddler do?",
+              "answer": "scare the cat",
+              "type": "action_performed",
+              "difficulty": "easy",
+              "entity": "toddler",
+              "is_middle_entity": false
+            },
+            {
+              "question": "Who watched the toddler?",
+              "answer": "the mother",
+              "type": "agent_identification",
+              "difficulty": "easy",
+              "entity": "toddler",
+              "is_middle_entity": false
+            },
+            {
+              "question": "How many distinct entities are in the sentence?",
+              "answer": "5",
+              "type": "entity_count",
+              "difficulty": "medium",
+              "entity": "toddler",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What did the entity that was watched do?",
+              "answer": "scared the cat",
+              "type": "nested_dependency",
+              "difficulty": "medium",
+              "entity": "toddler",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What series of events led to the toddler's action?",
+              "answer": "the mother watching the toddler",
+              "type": "causal_sequence",
+              "difficulty": "hard",
+              "entity": "toddler",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What is the consequence of the toddler's involvement?",
+              "answer": "the cat caught the bird",
+              "type": "chain_consequence",
+              "difficulty": "hard",
+              "entity": "toddler",
+              "is_middle_entity": false
+            }
+          ],
+          "mother": [
+            {
+              "question": "What did the mother do?",
+              "answer": "watch the toddler",
+              "type": "action_performed",
+              "difficulty": "easy",
+              "entity": "mother",
+              "is_middle_entity": false
+            },
+            {
+              "question": "Who was affected by the mother?",
+              "answer": "the toddler",
+              "type": "agent_identification",
+              "difficulty": "easy",
+              "entity": "mother",
+              "is_middle_entity": false
+            },
+            {
+              "question": "How many distinct entities are in the sentence?",
+              "answer": "5",
+              "type": "entity_count",
+              "difficulty": "medium",
+              "entity": "mother",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What did the entity acted upon by the mother do?",
+              "answer": "scared the cat",
+              "type": "nested_dependency",
+              "difficulty": "medium",
+              "entity": "mother",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What series of events led to the mother's action?",
+              "answer": "no prior events",
+              "type": "causal_sequence",
+              "difficulty": "hard",
+              "entity": "mother",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What is the consequence of the mother's involvement?",
+              "answer": "the toddler scared the cat",
+              "type": "chain_consequence",
+              "difficulty": "hard",
+              "entity": "mother",
+              "is_middle_entity": false
+            }
+          ],
+          "beetle": [
+            {
+              "question": "What did the beetle do?",
+              "answer": "crawl",
+              "type": "action_performed",
+              "difficulty": "easy",
+              "entity": "beetle",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What saw the beetle?",
+              "answer": "the bird",
+              "type": "agent_identification",
+              "difficulty": "easy",
+              "entity": "beetle",
+              "is_middle_entity": false
+            },
+            {
+              "question": "How many distinct entities are in the sentence?",
+              "answer": "5",
+              "type": "entity_count",
+              "difficulty": "medium",
+              "entity": "beetle",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What did the entity that was seen do?",
+              "answer": "crawled",
+              "type": "nested_dependency",
+              "difficulty": "medium",
+              "entity": "beetle",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What series of events led to the beetle's action?",
+              "answer": "the mother watching the toddler which led to the toddler scaring the cat which led to the cat catching the bird which led to the bird seeing the beetle",
+              "type": "causal_sequence",
+              "difficulty": "hard",
+              "entity": "beetle",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What is the consequence of the beetle's involvement?",
+              "answer": "none",
+              "type": "chain_consequence",
+              "difficulty": "hard",
+              "entity": "beetle",
+              "is_middle_entity": false
+            }
+          ],
+          "bird": [
+            {
+              "question": "What did the bird do?",
+              "answer": "see the beetle",
+              "type": "action_performed",
+              "difficulty": "easy",
+              "entity": "bird",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What caught the bird?",
+              "answer": "the cat",
+              "type": "agent_identification",
+              "difficulty": "easy",
+              "entity": "bird",
+              "is_middle_entity": false
+            },
+            {
+              "question": "How many distinct entities are in the sentence?",
+              "answer": "5",
+              "type": "entity_count",
+              "difficulty": "medium",
+              "entity": "bird",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What did the entity that was caught do?",
+              "answer": "see the beetle",
+              "type": "nested_dependency",
+              "difficulty": "medium",
+              "entity": "bird",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What series of events led to the bird's action?",
+              "answer": "the mother watching the toddler which led to the toddler scaring the cat which led to the cat catching the bird",
+              "type": "causal_sequence",
+              "difficulty": "hard",
+              "entity": "bird",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What is the consequence of the bird's involvement?",
+              "answer": "the beetle crawled",
+              "type": "chain_consequence",
+              "difficulty": "hard",
+              "entity": "bird",
+              "is_middle_entity": false
+            }
+          ],
+          "cat": [
+            {
+              "question": "What did the cat do?",
+              "answer": "catch the bird",
+              "type": "action_performed",
+              "difficulty": "easy",
+              "entity": "cat",
+              "is_middle_entity": true
+            },
+            {
+              "question": "Who scared the cat?",
+              "answer": "the toddler",
+              "type": "agent_identification",
+              "difficulty": "easy",
+              "entity": "cat",
+              "is_middle_entity": true
+            },
+            {
+              "question": "How many distinct entities are in the sentence?",
+              "answer": "5",
+              "type": "entity_count",
+              "difficulty": "medium",
+              "entity": "cat",
+              "is_middle_entity": true
+            },
+            {
+              "question": "What did the entity that was scared do?",
+              "answer": "caught the bird",
+              "type": "nested_dependency",
+              "difficulty": "medium",
+              "entity": "cat",
+              "is_middle_entity": true
+            },
+            {
+              "question": "What series of events led to the cat's action?",
+              "answer": "the mother watching the toddler which led to the toddler scaring the cat",
+              "type": "causal_sequence",
+              "difficulty": "hard",
+              "entity": "cat",
+              "is_middle_entity": true
+            },
+            {
+              "question": "What is the consequence of the cat's involvement?",
+              "answer": "the bird saw the beetle",
+              "type": "chain_consequence",
+              "difficulty": "hard",
+              "entity": "cat",
+              "is_middle_entity": true
+            }
+          ]
+        },
+        "total_questions": 30
+      }
+    ]
+  },
+  "complexity_5": {
+    "sentences": [
+      {
+        "id": "complexity_5_sentence_1",
+        "sentence": "The spider that the frog that the snake that the hawk that the falconer that the wildlife photographer snapped released saw followed ate died.",
+        "structure": [
+          {
+            "subject": "spider",
+            "action": "died",
+            "object": null
+          },
+          {
+            "subject": "frog",
+            "action": "ate",
+            "object": "spider"
+          },
+          {
+            "subject": "snake",
+            "action": "followed",
+            "object": "frog"
+          },
+          {
+            "subject": "hawk",
+            "action": "saw",
+            "object": "snake"
+          },
+          {
+            "subject": "falconer",
+            "action": "released",
+            "object": "hawk"
+          },
+          {
+            "subject": "photographer",
+            "action": "snapped",
+            "object": "falconer"
+          }
+        ],
+        "middle_entity": "snake",
+        "all_entities": [
+          "frog",
+          "spider",
+          "falconer",
+          "photographer",
+          "snake",
+          "hawk"
+        ],
+        "questions_by_entity": {
+          "frog": [
+            {
+              "question": "What did the frog do?",
+              "answer": "eat the spider",
+              "type": "action_performed",
+              "difficulty": "easy",
+              "entity": "frog",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What followed the frog?",
+              "answer": "the snake",
+              "type": "agent_identification",
+              "difficulty": "easy",
+              "entity": "frog",
+              "is_middle_entity": false
+            },
+            {
+              "question": "How many distinct entities are in the sentence?",
+              "answer": "6",
+              "type": "entity_count",
+              "difficulty": "medium",
+              "entity": "frog",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What did the entity that was followed do?",
+              "answer": "ate the spider",
+              "type": "nested_dependency",
+              "difficulty": "medium",
+              "entity": "frog",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What series of events led to the frog's action?",
+              "answer": "the photographer snapping the falconer which led to the falconer releasing the hawk which led to the hawk seeing the snake which led to the snake following the frog",
+              "type": "causal_sequence",
+              "difficulty": "hard",
+              "entity": "frog",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What is the consequence of the frog's involvement?",
+              "answer": "the spider died",
+              "type": "chain_consequence",
+              "difficulty": "hard",
+              "entity": "frog",
+              "is_middle_entity": false
+            }
+          ],
+          "spider": [
+            {
+              "question": "What did the spider do?",
+              "answer": "die",
+              "type": "action_performed",
+              "difficulty": "easy",
+              "entity": "spider",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What ate the spider?",
+              "answer": "the frog",
+              "type": "agent_identification",
+              "difficulty": "easy",
+              "entity": "spider",
+              "is_middle_entity": false
+            },
+            {
+              "question": "How many distinct entities are in the sentence?",
+              "answer": "6",
+              "type": "entity_count",
+              "difficulty": "medium",
+              "entity": "spider",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What did the entity that was eaten do?",
+              "answer": "died",
+              "type": "nested_dependency",
+              "difficulty": "medium",
+              "entity": "spider",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What series of events led to the spider's action?",
+              "answer": "the photographer snapping the falconer which led to the falconer releasing the hawk which led to the hawk seeing the snake which led to the snake following the frog which led to the frog eating the spider",
+              "type": "causal_sequence",
+              "difficulty": "hard",
+              "entity": "spider",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What is the consequence of the spider's involvement?",
+              "answer": "none",
+              "type": "chain_consequence",
+              "difficulty": "hard",
+              "entity": "spider",
+              "is_middle_entity": false
+            }
+          ],
+          "falconer": [
+            {
+              "question": "What did the falconer do?",
+              "answer": "release the hawk",
+              "type": "action_performed",
+              "difficulty": "easy",
+              "entity": "falconer",
+              "is_middle_entity": false
+            },
+            {
+              "question": "Who snapped the falconer?",
+              "answer": "the photographer",
+              "type": "agent_identification",
+              "difficulty": "easy",
+              "entity": "falconer",
+              "is_middle_entity": false
+            },
+            {
+              "question": "How many distinct entities are in the sentence?",
+              "answer": "6",
+              "type": "entity_count",
+              "difficulty": "medium",
+              "entity": "falconer",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What did the entity that was snapped do?",
+              "answer": "released the hawk",
+              "type": "nested_dependency",
+              "difficulty": "medium",
+              "entity": "falconer",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What series of events led to the falconer's action?",
+              "answer": "the photographer snapping the falconer",
+              "type": "causal_sequence",
+              "difficulty": "hard",
+              "entity": "falconer",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What is the consequence of the falconer's involvement?",
+              "answer": "the hawk saw the snake",
+              "type": "chain_consequence",
+              "difficulty": "hard",
+              "entity": "falconer",
+              "is_middle_entity": false
+            }
+          ],
+          "photographer": [
+            {
+              "question": "What did the photographer do?",
+              "answer": "snap the falconer",
+              "type": "action_performed",
+              "difficulty": "easy",
+              "entity": "photographer",
+              "is_middle_entity": false
+            },
+            {
+              "question": "Who was affected by the photographer?",
+              "answer": "the falconer",
+              "type": "agent_identification",
+              "difficulty": "easy",
+              "entity": "photographer",
+              "is_middle_entity": false
+            },
+            {
+              "question": "How many distinct entities are in the sentence?",
+              "answer": "6",
+              "type": "entity_count",
+              "difficulty": "medium",
+              "entity": "photographer",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What did the entity acted upon by the photographer do?",
+              "answer": "released the hawk",
+              "type": "nested_dependency",
+              "difficulty": "medium",
+              "entity": "photographer",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What series of events led to the photographer's action?",
+              "answer": "no prior events",
+              "type": "causal_sequence",
+              "difficulty": "hard",
+              "entity": "photographer",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What is the consequence of the photographer's involvement?",
+              "answer": "the falconer released the hawk",
+              "type": "chain_consequence",
+              "difficulty": "hard",
+              "entity": "photographer",
+              "is_middle_entity": false
+            }
+          ],
+          "snake": [
+            {
+              "question": "What did the snake do?",
+              "answer": "follow the frog",
+              "type": "action_performed",
+              "difficulty": "easy",
+              "entity": "snake",
+              "is_middle_entity": true
+            },
+            {
+              "question": "What saw the snake?",
+              "answer": "the hawk",
+              "type": "agent_identification",
+              "difficulty": "easy",
+              "entity": "snake",
+              "is_middle_entity": true
+            },
+            {
+              "question": "How many distinct entities are in the sentence?",
+              "answer": "6",
+              "type": "entity_count",
+              "difficulty": "medium",
+              "entity": "snake",
+              "is_middle_entity": true
+            },
+            {
+              "question": "What did the entity that was seen do?",
+              "answer": "followed the frog",
+              "type": "nested_dependency",
+              "difficulty": "medium",
+              "entity": "snake",
+              "is_middle_entity": true
+            },
+            {
+              "question": "What series of events led to the snake's action?",
+              "answer": "the photographer snapping the falconer which led to the falconer releasing the hawk which led to the hawk seeing the snake",
+              "type": "causal_sequence",
+              "difficulty": "hard",
+              "entity": "snake",
+              "is_middle_entity": true
+            },
+            {
+              "question": "What is the consequence of the snake's involvement?",
+              "answer": "the frog ate the spider",
+              "type": "chain_consequence",
+              "difficulty": "hard",
+              "entity": "snake",
+              "is_middle_entity": true
+            }
+          ],
+          "hawk": [
+            {
+              "question": "What did the hawk do?",
+              "answer": "see the snake",
+              "type": "action_performed",
+              "difficulty": "easy",
+              "entity": "hawk",
+              "is_middle_entity": false
+            },
+            {
+              "question": "Who released the hawk?",
+              "answer": "the falconer",
+              "type": "agent_identification",
+              "difficulty": "easy",
+              "entity": "hawk",
+              "is_middle_entity": false
+            },
+            {
+              "question": "How many distinct entities are in the sentence?",
+              "answer": "6",
+              "type": "entity_count",
+              "difficulty": "medium",
+              "entity": "hawk",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What did the entity that was released do?",
+              "answer": "saw the snake",
+              "type": "nested_dependency",
+              "difficulty": "medium",
+              "entity": "hawk",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What series of events led to the hawk's action?",
+              "answer": "the photographer snapping the falconer which led to the falconer releasing the hawk",
+              "type": "causal_sequence",
+              "difficulty": "hard",
+              "entity": "hawk",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What is the consequence of the hawk's involvement?",
+              "answer": "the snake followed the frog",
+              "type": "chain_consequence",
+              "difficulty": "hard",
+              "entity": "hawk",
+              "is_middle_entity": false
+            }
+          ]
+        },
+        "total_questions": 36
+      }
+    ]
+  },
+  "complexity_6": {
+    "sentences": [
+      {
+        "id": "complexity_6_sentence_1",
+        "sentence": "The apple that the worm that the bird that the squirrel that the cat that the dog that the child saw barked at chased startled pecked nudged rolled.",
+        "structure": [
+          {
+            "subject": "apple",
+            "action": "rolled",
+            "object": null
+          },
+          {
+            "subject": "worm",
+            "action": "nudged",
+            "object": "apple"
+          },
+          {
+            "subject": "bird",
+            "action": "pecked",
+            "object": "worm"
+          },
+          {
+            "subject": "squirrel",
+            "action": "startled",
+            "object": "bird"
+          },
+          {
+            "subject": "cat",
+            "action": "chased",
+            "object": "squirrel"
+          },
+          {
+            "subject": "dog",
+            "action": "barked at",
+            "object": "cat"
+          },
+          {
+            "subject": "child",
+            "action": "saw",
+            "object": "dog"
+          }
+        ],
+        "middle_entity": "squirrel",
+        "all_entities": [
+          "apple",
+          "squirrel",
+          "dog",
+          "worm",
+          "child",
+          "bird",
+          "cat"
+        ],
+        "questions_by_entity": {
+          "apple": [
+            {
+              "question": "What did the apple do?",
+              "answer": "roll",
+              "type": "action_performed",
+              "difficulty": "easy",
+              "entity": "apple",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What nudged the apple?",
+              "answer": "the worm",
+              "type": "agent_identification",
+              "difficulty": "easy",
+              "entity": "apple",
+              "is_middle_entity": false
+            },
+            {
+              "question": "How many distinct entities are in the sentence?",
+              "answer": "7",
+              "type": "entity_count",
+              "difficulty": "medium",
+              "entity": "apple",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What did the entity that was nudged do?",
+              "answer": "rolled",
+              "type": "nested_dependency",
+              "difficulty": "medium",
+              "entity": "apple",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What series of events led to the apple's action?",
+              "answer": "the child seeing the dog which led to the dog barking at the cat which led to the cat chasing the squirrel which led to the squirrel startling the bird which led to the bird pecking the worm which led to the worm nudging the apple",
+              "type": "causal_sequence",
+              "difficulty": "hard",
+              "entity": "apple",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What is the consequence of the apple's involvement?",
+              "answer": "none",
+              "type": "chain_consequence",
+              "difficulty": "hard",
+              "entity": "apple",
+              "is_middle_entity": false
+            }
+          ],
+          "squirrel": [
+            {
+              "question": "What did the squirrel do?",
+              "answer": "startle the bird",
+              "type": "action_performed",
+              "difficulty": "easy",
+              "entity": "squirrel",
+              "is_middle_entity": true
+            },
+            {
+              "question": "What chased the squirrel?",
+              "answer": "the cat",
+              "type": "agent_identification",
+              "difficulty": "easy",
+              "entity": "squirrel",
+              "is_middle_entity": true
+            },
+            {
+              "question": "How many distinct entities are in the sentence?",
+              "answer": "7",
+              "type": "entity_count",
+              "difficulty": "medium",
+              "entity": "squirrel",
+              "is_middle_entity": true
+            },
+            {
+              "question": "What did the entity that was chased do?",
+              "answer": "startled the bird",
+              "type": "nested_dependency",
+              "difficulty": "medium",
+              "entity": "squirrel",
+              "is_middle_entity": true
+            },
+            {
+              "question": "What series of events led to the squirrel's action?",
+              "answer": "the child seeing the dog which led to the dog barking at the cat which led to the cat chasing the squirrel",
+              "type": "causal_sequence",
+              "difficulty": "hard",
+              "entity": "squirrel",
+              "is_middle_entity": true
+            },
+            {
+              "question": "What is the consequence of the squirrel's involvement?",
+              "answer": "the bird pecked the worm",
+              "type": "chain_consequence",
+              "difficulty": "hard",
+              "entity": "squirrel",
+              "is_middle_entity": true
+            }
+          ],
+          "dog": [
+            {
+              "question": "What did the dog do?",
+              "answer": "bark at the cat",
+              "type": "action_performed",
+              "difficulty": "easy",
+              "entity": "dog",
+              "is_middle_entity": false
+            },
+            {
+              "question": "Who saw the dog?",
+              "answer": "the child",
+              "type": "agent_identification",
+              "difficulty": "easy",
+              "entity": "dog",
+              "is_middle_entity": false
+            },
+            {
+              "question": "How many distinct entities are in the sentence?",
+              "answer": "7",
+              "type": "entity_count",
+              "difficulty": "medium",
+              "entity": "dog",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What did the entity that was seen do?",
+              "answer": "barked at the cat",
+              "type": "nested_dependency",
+              "difficulty": "medium",
+              "entity": "dog",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What series of events led to the dog's action?",
+              "answer": "the child seeing the dog",
+              "type": "causal_sequence",
+              "difficulty": "hard",
+              "entity": "dog",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What is the consequence of the dog's involvement?",
+              "answer": "the cat chased the squirrel",
+              "type": "chain_consequence",
+              "difficulty": "hard",
+              "entity": "dog",
+              "is_middle_entity": false
+            }
+          ],
+          "worm": [
+            {
+              "question": "What did the worm do?",
+              "answer": "nudge the apple",
+              "type": "action_performed",
+              "difficulty": "easy",
+              "entity": "worm",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What pecked the worm?",
+              "answer": "the bird",
+              "type": "agent_identification",
+              "difficulty": "easy",
+              "entity": "worm",
+              "is_middle_entity": false
+            },
+            {
+              "question": "How many distinct entities are in the sentence?",
+              "answer": "7",
+              "type": "entity_count",
+              "difficulty": "medium",
+              "entity": "worm",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What did the entity that was pecked do?",
+              "answer": "nudged the apple",
+              "type": "nested_dependency",
+              "difficulty": "medium",
+              "entity": "worm",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What series of events led to the worm's action?",
+              "answer": "the child seeing the dog which led to the dog barking at the cat which led to the cat chasing the squirrel which led to the squirrel startling the bird which led to the bird pecking the worm",
+              "type": "causal_sequence",
+              "difficulty": "hard",
+              "entity": "worm",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What is the consequence of the worm's involvement?",
+              "answer": "the apple rolled",
+              "type": "chain_consequence",
+              "difficulty": "hard",
+              "entity": "worm",
+              "is_middle_entity": false
+            }
+          ],
+          "child": [
+            {
+              "question": "What did the child do?",
+              "answer": "see the dog",
+              "type": "action_performed",
+              "difficulty": "easy",
+              "entity": "child",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What was affected by the child?",
+              "answer": "the dog",
+              "type": "agent_identification",
+              "difficulty": "easy",
+              "entity": "child",
+              "is_middle_entity": false
+            },
+            {
+              "question": "How many distinct entities are in the sentence?",
+              "answer": "7",
+              "type": "entity_count",
+              "difficulty": "medium",
+              "entity": "child",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What did the entity acted upon by the child do?",
+              "answer": "barked at the cat",
+              "type": "nested_dependency",
+              "difficulty": "medium",
+              "entity": "child",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What series of events led to the child's action?",
+              "answer": "no prior events",
+              "type": "causal_sequence",
+              "difficulty": "hard",
+              "entity": "child",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What is the consequence of the child's involvement?",
+              "answer": "the dog barked at the cat",
+              "type": "chain_consequence",
+              "difficulty": "hard",
+              "entity": "child",
+              "is_middle_entity": false
+            }
+          ],
+          "bird": [
+            {
+              "question": "What did the bird do?",
+              "answer": "peck the worm",
+              "type": "action_performed",
+              "difficulty": "easy",
+              "entity": "bird",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What startled the bird?",
+              "answer": "the squirrel",
+              "type": "agent_identification",
+              "difficulty": "easy",
+              "entity": "bird",
+              "is_middle_entity": false
+            },
+            {
+              "question": "How many distinct entities are in the sentence?",
+              "answer": "7",
+              "type": "entity_count",
+              "difficulty": "medium",
+              "entity": "bird",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What did the entity that was startled do?",
+              "answer": "pecked the worm",
+              "type": "nested_dependency",
+              "difficulty": "medium",
+              "entity": "bird",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What series of events led to the bird's action?",
+              "answer": "the child seeing the dog which led to the dog barking at the cat which led to the cat chasing the squirrel which led to the squirrel startling the bird",
+              "type": "causal_sequence",
+              "difficulty": "hard",
+              "entity": "bird",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What is the consequence of the bird's involvement?",
+              "answer": "the worm nudged the apple",
+              "type": "chain_consequence",
+              "difficulty": "hard",
+              "entity": "bird",
+              "is_middle_entity": false
+            }
+          ],
+          "cat": [
+            {
+              "question": "What did the cat do?",
+              "answer": "chase the squirrel",
+              "type": "action_performed",
+              "difficulty": "easy",
+              "entity": "cat",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What barked at the cat?",
+              "answer": "the dog",
+              "type": "agent_identification",
+              "difficulty": "easy",
+              "entity": "cat",
+              "is_middle_entity": false
+            },
+            {
+              "question": "How many distinct entities are in the sentence?",
+              "answer": "7",
+              "type": "entity_count",
+              "difficulty": "medium",
+              "entity": "cat",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What did the entity that was barked at do?",
+              "answer": "chased the squirrel",
+              "type": "nested_dependency",
+              "difficulty": "medium",
+              "entity": "cat",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What series of events led to the cat's action?",
+              "answer": "the child seeing the dog which led to the dog barking at the cat",
+              "type": "causal_sequence",
+              "difficulty": "hard",
+              "entity": "cat",
+              "is_middle_entity": false
+            },
+            {
+              "question": "What is the consequence of the cat's involvement?",
+              "answer": "the squirrel startled the bird",
+              "type": "chain_consequence",
+              "difficulty": "hard",
+              "entity": "cat",
+              "is_middle_entity": false
+            }
+          ]
+        },
+        "total_questions": 42
+      }
+    ]
+  }
+}
