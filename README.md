@@ -127,25 +127,75 @@ Scripts for evaluating model performance:
 
 ## 🖥️ Usage
 
-### Generating the Dataset
+### Downloading the Dataset
+
+Clone this repository to access the complete CenterBench dataset:
 ```bash
-# Generate plausible sentences
-python experiments/Dataset_Creation/sentence_generation_plausible.py
-
-# Generate implausible sentences
-python experiments/Dataset_Creation/sentence_generation_implausible.py
-
-# Generate questions for plausible sentences
-python experiments/Dataset_Creation/question_and_answer_generation_plausible.py
-
-# Generate questions for implausible sentences
-python experiments/Dataset_Creation/question_and_answer_generation_implausible.py
+git clone https://github.com/yourusername/centerbench.git
+cd centerbench
 ```
 
-### Evaluating Models
-```bash
-python experiments/Evaluation/generate_response_and_evaluate.py
+### Loading the Dataset
+```python
+import json
+
+# Load plausible sentences
+with open('Dataset/plausible_subset.json', 'r') as f:
+    plausible_data = json.load(f)
+
+# Load implausible sentences
+with open('Dataset/implausible_subset.json', 'r') as f:
+    implausible_data = json.load(f)
+
+# Access sentences by complexity level
+complexity_1_sentences = plausible_data['complexity_1']['sentences']
 ```
+
+### Evaluating Your Model
+
+#### Installation
+
+First, install the required dependencies:
+```bash
+pip install together anthropic openai spacy sentence-transformers python-dotenv tqdm
+python -m spacy download en_core_web_sm
+```
+
+#### Set Up API Keys
+
+Create a `.env` file in the root directory with your API keys:
+```bash
+TOGETHER_API_KEY=your_together_api_key
+ANTHROPIC_API_KEY=your_anthropic_api_key
+DEEPSEEK_API_KEY=your_deepseek_api_key
+GEMINI_API_KEY=your_gemini_api_key
+```
+
+#### Run Evaluation
+
+Use our evaluation script to test models on the dataset:
+```bash
+# Basic usage with a specific model
+python Experiments/Evaluation/generate_response_and_evaluate.py Dataset/plausible_subset.json --model deepseek-ai/DeepSeek-V3
+
+# Evaluate on implausible subset
+python Experiments/Evaluation/generate_response_and_evaluate.py Dataset/implausible_subset.json --model claude-3-5-sonnet-20241022
+
+# Additional options
+python Experiments/Evaluation/generate_response_and_evaluate.py Dataset/plausible_subset.json \
+    --model gemini-2.0-flash-thinking-exp-01-21 \
+    --difficulty hard \
+    --middle-entity \
+    --output results.json
+```
+
+#### Supported Models
+
+The evaluation script supports models from:
+- **Together AI**: Various open-source models
+- **Anthropic**: Claude models (use `--extended-thinking` for reasoning traces)
+- **DeepSeek**: DeepSeek-V3 and other DeepSeek models
+- **Google**: Gemini modelsRetryClaude can make mistakes. Please double-check responses. Sonnet 4.5
 
 ## ✏️ Reference
 
