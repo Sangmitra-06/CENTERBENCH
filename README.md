@@ -155,10 +155,16 @@ complexity_1_sentences = plausible_data['complexity_1']['sentences']
 
 #### Installation
 
-First, install the required dependencies:
+Install the required dependencies:
 ```bash
-pip install together anthropic openai spacy sentence-transformers python-dotenv tqdm
+pip install -r requirements.txt
 python -m spacy download en_core_web_sm
+```
+
+**Note for Gemini users:** You'll also need to install the Google Cloud CLI and authenticate:
+```bash
+# Install gcloud CLI (see https://cloud.google.com/sdk/docs/install)
+gcloud auth login
 ```
 
 #### Set Up API Keys
@@ -169,6 +175,11 @@ TOGETHER_API_KEY=your_together_api_key
 ANTHROPIC_API_KEY=your_anthropic_api_key
 DEEPSEEK_API_KEY=your_deepseek_api_key
 GEMINI_API_KEY=your_gemini_api_key
+```
+
+For Gemini Vertex AI, update the project parameters in the evaluation script (line 952):
+```python
+client = genai.Client(vertexai=True, project="your_project_name", location="your_project_location")
 ```
 
 #### Run Evaluation
@@ -195,7 +206,7 @@ The evaluation script supports models from:
 - **Together AI**: Various open-source models
 - **Anthropic**: Claude models (use `--extended-thinking` for reasoning traces)
 - **DeepSeek**: DeepSeek-V3 and other DeepSeek models
-- **Google**: Gemini modelsRetryClaude can make mistakes. Please double-check responses. Sonnet 4.5
+- **Google**: Gemini models (requires Vertex AI setup)
 
 ## ✏️ Reference
 
