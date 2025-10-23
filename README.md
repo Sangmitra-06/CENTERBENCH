@@ -3,6 +3,8 @@
 This is the repository for [The Dog the Cat Chased Stumped the Model:
 Measuring When Language Models Abandon Structure for Shortcuts](https://arxiv.org/abs/2502.05331). 
 
+**📦 Dataset:** Available on [Hugging Face](https://huggingface.co/datasets/Sangmitra-06/CENTERBENCH)
+
 Authors: Sangmitra Madhusudan, Kaige Chen, and Ali Emami
 
 ## 📄 Paper abstract
