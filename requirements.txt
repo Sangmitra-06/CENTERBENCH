@@ -1,0 +1,13 @@
+# API SDKs
+together
+anthropic
+openai
+google-generativeai
+
+# NLP and ML
+spacy
+sentence-transformers
+
+# Utilities
+python-dotenv
+tqdm
