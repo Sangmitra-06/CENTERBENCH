@@ -1,7 +1,7 @@
 # 🧩CENTERBENCH
 
 This is the repository for [The Dog the Cat Chased Stumped the Model:
-Measuring When Language Models Abandon Structure for Shortcuts](https://arxiv.org/abs/2510.20543). 
+Measuring When Language Models Abandon Structure for Shortcuts](https://aclanthology.org/2026.eacl-long.19/). 
 
 **📦 Dataset:** Available on [Hugging Face](https://huggingface.co/datasets/Sangmitra-06/CENTERBENCH)
 
@@ -213,13 +213,22 @@ The evaluation script supports models from:
 Please use the following bibtex citation if this paper was a part of your work, thank you!
 
 ```
-@misc{madhusudan2025dogcatchasedstumped,
-      title={The Dog the Cat Chased Stumped the Model: Measuring When Language Models Abandon Structure for Shortcuts}, 
-      author={Sangmitra Madhusudan and Kaige Chen and Ali Emami},
-      year={2025},
-      eprint={2510.20543},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL},
-      url={https://arxiv.org/abs/2510.20543}, 
+@inproceedings{madhusudan-etal-2026-dog,
+    title = "The Dog the Cat Chased Stumped the Model: Measuring When Language Models Abandon Structure for Shortcuts",
+    author = "Madhusudan, Sangmitra  and
+      Chen, Kaige  and
+      Emami, Ali",
+    editor = "Demberg, Vera  and
+      Inui, Kentaro  and
+      Marquez, Llu{\'i}s",
+    booktitle = "Proceedings of the 19th Conference of the {E}uropean Chapter of the {A}ssociation for {C}omputational {L}inguistics (Volume 1: Long Papers)",
+    month = mar,
+    year = "2026",
+    address = "Rabat, Morocco",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2026.eacl-long.19/",
+    pages = "428--453",
+    ISBN = "979-8-89176-380-7",
+    abstract = "When language models correctly parse ``The cat that the dog chased meowed,'' are they analyzing syntax or simply familiar with dogs chasing cats? Despite extensive benchmarking, we lack methods to distinguish structural understanding from semantic pattern matching. We introduce **CenterBench**, a dataset of 9,720 comprehension questions on center-embedded sentences (like ``The cat [that the dog chased] meowed'') where relative clauses nest recursively, creating processing demands from simple to deeply nested structures. Each sentence has a syntactically identical but semantically implausible counterpart (e.g., mailmen prescribe medicine, doctors deliver mail) and six comprehension questions testing surface understanding, syntactic dependencies, and causal reasoning. Testing six models reveals that performance gaps between plausible and implausible sentences widen systematically with complexity, with models showing median gaps up to 26.8 percentage points, quantifying when they abandon structural analysis for semantic associations. Notably, semantic plausibility harms performance on questions about resulting actions, where following causal relationships matters more than semantic coherence. Reasoning models improve accuracy but their traces show semantic shortcuts, overthinking, and answer refusal. Unlike models whose plausibility advantage systematically widens with complexity, humans shows variable semantic effects. CenterBench provides the first framework to identify when models shift from structural analysis to pattern matching."
 }
 ```
